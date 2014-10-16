@@ -15,7 +15,10 @@
     "angular",
     "gulp"
   ],
-  "author": "ghoullier",
+  "author": {
+    "name": "Grégory Houllier",
+    "url": "https://twitter.com/ghoullier"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ghoullier/generator-angular-devstack/issues"
