@@ -1,4 +1,4 @@
-# Generator Angular Devstack v0.1.1
+# Generator Angular Devstack v0.1.2
 
 Provide structure and automation to manage AngularJS projects.
 
