@@ -1,0 +1,10 @@
+# Ignore specific plateforms files
+.DS_STORE
+
+# Ignore app generated files
+/node_modules/
+/dist/
+/vendor/
+
+# Ignore IDE files
+/.idea/
