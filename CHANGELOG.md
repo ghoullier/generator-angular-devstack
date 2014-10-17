@@ -7,6 +7,7 @@
 #### Features
 
 - Angular, Browserify, Gulp, Express devstack
+- Sass(node-sass)
 - Ui-Router integration
 
 ## 0.0.0 (2014-10-17)
