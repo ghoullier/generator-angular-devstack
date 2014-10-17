@@ -14,7 +14,9 @@
     "app/styles/modules/blocks",
     "app/styles/modules/pages",
     "app/styles/partials",
-    "app/views"
+    "app/views",
+    "tests",
+    "tests/e2e"
   ],
   "tasks": [
     "Gulpfile.js",
@@ -51,7 +53,9 @@
     "app/styles/partials/_colors.scss",
     "app/styles/partials/_mixins.scss",
     "app/styles/partials/_reset.scss",
-    "app/views/index.html"
+    "app/views/index.html",
+    "tests/e2e/protractor.conf.js",
+    "tests/e2e/scenarios.js"
   ],
   "templated": [
     "package.json",
