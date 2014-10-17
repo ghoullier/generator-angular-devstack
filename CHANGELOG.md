@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.3 (2014-10-17)
+
+#### Fix
+
+- Add tests files in generator
+
 ## 0.1.2 (2014-10-17)
 
 #### Feature
