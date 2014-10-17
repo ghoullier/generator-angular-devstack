@@ -9,12 +9,18 @@
     "app/scripts/modules/templates",
     "app/scripts/modules/ui",
     "app/styles",
+    "app/styles/images",
+    "app/styles/modules",
+    "app/styles/modules/blocks",
+    "app/styles/modules/pages",
+    "app/styles/partials",
     "app/views"
   ],
-  "copies": [
+  "tasks": [
     "Gulpfile.js",
     "tasks/build.js",
     "tasks/clean.js",
+    "tasks/config.js",
     "tasks/default.js",
     "tasks/env.js",
     "tasks/handlers.js",
@@ -22,21 +28,32 @@
     "tasks/lint.js",
     "tasks/live-reload.js",
     "tasks/paths.js",
+    "tasks/publish.js",
     "tasks/scripts-app.js",
     "tasks/scripts-vendor.js",
     "tasks/server-config.js",
     "tasks/server.js",
     "tasks/styles.js",
     "tasks/views.js",
-    "tasks/watch.js",
+    "tasks/watch.js"
+  ],
+  "src": [
     "app/scripts/main.js",
     "app/scripts/vendor.js",
     "app/scripts/modules/common/services/tracer.js",
     "app/scripts/modules/ui/config/route.js",
     "app/scripts/modules/ui/controllers/index.js",
+    "app/styles/main.scss",
+    "app/styles/modules/blocks/_all.scss",
+    "app/styles/modules/pages/_all.scss",
+    "app/styles/modules/_all.scss",
+    "app/styles/partials/_all.scss",
+    "app/styles/partials/_colors.scss",
+    "app/styles/partials/_mixins.scss",
+    "app/styles/partials/_reset.scss",
     "app/views/index.html"
   ],
-  "templates": [
+  "templated": [
     "package.json",
     "bower.json",
     "app/index.html",
@@ -46,11 +63,12 @@
     "tasks/templates.js"
   ],
   "dots": [
-    "gitignore",
-    "editorconfig",
-    "jshintrc",
-    "bowerrc",
-    "app/scripts/modules/templates/gitignore",
-    "app/views/gitkeep"
+    ".gitignore",
+    ".editorconfig",
+    ".jshintrc",
+    ".bowerrc",
+    "app/scripts/modules/templates/.gitignore",
+    "app/styles/images/.gitkeep",
+    "app/views/.gitkeep"
   ]
 }

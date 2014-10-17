@@ -13,12 +13,10 @@ module.exports = function () {
     if (!_.isArray(data)) { return data; }
     var result = {};
     data.forEach(function (element) {
-      if (type === 'templates') {
+      if (type === 'templated') {
         var basename = path.basename(element);
         var source = element.replace(basename, '_' + basename);
         result[source] = element;
-      } else if(type === 'dots') {
-        result[element] = '.' + element;
       } else {
         result[element] = element;
       }
@@ -44,11 +42,15 @@ module.exports = function () {
     this.mkdir(directory);
   }.bind(this));
 
-  _.each(getFiles('copies'), function(dest, src) {
+  _.each(getFiles('tasks'), function(dest, src) {
     this.copy(src, dest);
   }.bind(this));
 
-  _.each(getFiles('templates'), function(dest, src) {
+  _.each(getFiles('src'), function(dest, src) {
+    this.copy(src, dest);
+  }.bind(this));
+
+  _.each(getFiles('templated'), function(dest, src) {
     this.template(src, dest);
   }.bind(this));
 
