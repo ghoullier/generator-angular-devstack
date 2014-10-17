@@ -1,0 +1,56 @@
+{
+  "directories": [
+    "tasks",
+    "app",
+    "app/scripts",
+    "app/scripts/modules",
+    "app/scripts/modules/common",
+    "app/scripts/modules/data",
+    "app/scripts/modules/templates",
+    "app/scripts/modules/ui",
+    "app/styles",
+    "app/views"
+  ],
+  "copies": [
+    "Gulpfile.js",
+    "tasks/build.js",
+    "tasks/clean.js",
+    "tasks/default.js",
+    "tasks/env.js",
+    "tasks/handlers.js",
+    "tasks/images.js",
+    "tasks/lint.js",
+    "tasks/live-reload.js",
+    "tasks/paths.js",
+    "tasks/scripts-app.js",
+    "tasks/scripts-vendor.js",
+    "tasks/server-config.js",
+    "tasks/server.js",
+    "tasks/styles.js",
+    "tasks/views.js",
+    "tasks/watch.js",
+    "app/scripts/main.js",
+    "app/scripts/vendor.js",
+    "app/scripts/modules/common/services/tracer.js",
+    "app/scripts/modules/ui/config/route.js",
+    "app/scripts/modules/ui/controllers/index.js",
+    "app/views/index.html"
+  ],
+  "templates": [
+    "package.json",
+    "bower.json",
+    "app/index.html",
+    "app/scripts/modules/common/module.js",
+    "app/scripts/modules/data/module.js",
+    "app/scripts/modules/ui/module.js",
+    "tasks/templates.js"
+  ],
+  "dots": [
+    "gitignore",
+    "editorconfig",
+    "jshintrc",
+    "bowerrc",
+    "app/scripts/modules/templates/gitignore",
+    "app/views/gitkeep"
+  ]
+}
