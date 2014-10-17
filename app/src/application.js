@@ -13,10 +13,14 @@ module.exports = function () {
     if (!_.isArray(data)) { return data; }
     var result = {};
     data.forEach(function (element) {
-      if (type === 'templated') {
+      if ('templated' === type) {
         var basename = path.basename(element);
         var source = element.replace(basename, '_' + basename);
         result[source] = element;
+      } else if ('dots' === type) {
+        var basename = path.basename(element);
+        var source = element.replace(basename, '.' + basename);
+        result[element] = source;
       } else {
         result[element] = element;
       }

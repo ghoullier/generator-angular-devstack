@@ -63,12 +63,12 @@
     "tasks/templates.js"
   ],
   "dots": [
-    ".gitignore",
-    ".editorconfig",
-    ".jshintrc",
-    ".bowerrc",
-    "app/scripts/modules/templates/.gitignore",
-    "app/styles/images/.gitkeep",
-    "app/views/.gitkeep"
+    "gitignore",
+    "editorconfig",
+    "jshintrc",
+    "bowerrc",
+    "app/scripts/modules/templates/gitignore",
+    "app/styles/images/gitkeep",
+    "app/views/gitkeep"
   ]
 }
