@@ -20,7 +20,7 @@ var AngularDevstackGenerator = yeoman.generators.Base.extend({
   info: function () {
     this.log(yosay(
       chalk.red('Welcome!') + '\n' +
-      chalk.yellow('You\'re using the fantastic generator for scaffolding an application with Angular and Gulp!')
+      chalk.yellow('You\'re using Angular Devstack!')
     ));
   },
 
