@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.1.4 (2014-10-20)
+
+#### Features
+
+- Add default README in project structure
+- Add default description in generated package.json
+
 ## 0.1.3 (2014-10-17)
 
 #### Fix
