@@ -60,6 +60,7 @@
   "templated": [
     "package.json",
     "bower.json",
+    "README.md",
     "app/index.html",
     "app/scripts/modules/common/module.js",
     "app/scripts/modules/data/module.js",
