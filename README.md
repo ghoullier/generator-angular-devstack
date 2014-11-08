@@ -1,4 +1,4 @@
-# Generator Angular Devstack v0.1.5
+# Generator Angular Devstack v0.1.6 [![Build Status](https://travis-ci.org/ghoullier/core.js.png?branch=master)](https://travis-ci.org/ghoullier/core.js)
 
 Provide structure and automation to manage AngularJS projects.
 
