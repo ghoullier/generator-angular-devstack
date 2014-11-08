@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.7 (2014-11-08)
+
+#### Features
+
+- Update npm dependencies
+
 ## 0.1.6 (2014-11-08)
 
 #### Features
