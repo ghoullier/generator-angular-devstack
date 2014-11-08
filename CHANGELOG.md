@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.8 (2014-11-08)
+
+#### Features
+
+- Add new ci badges
+
 ## 0.1.7 (2014-11-08)
 
 #### Features
