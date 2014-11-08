@@ -1,3 +1,7 @@
 # <%= appname %> v0.0.0
 
-> Describe your project here
+## Documentation
+
+- [GETTING-STARTED](./GETTING-STARTED.md)
+
+> TODO: Documentation

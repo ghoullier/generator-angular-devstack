@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.5 (2014-11-08)
+
+#### Features
+
+- Add test with mocha
+
 ## 0.1.4 (2014-10-20)
 
 #### Features

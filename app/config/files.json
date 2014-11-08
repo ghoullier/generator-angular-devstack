@@ -40,6 +40,8 @@
     "tasks/watch.js"
   ],
   "src": [
+    "GETTING-STARTED.md",
+    "STYLEGUIDE.md",
     "app/scripts/main.js",
     "app/scripts/vendor.js",
     "app/scripts/modules/common/services/tracer.js",

@@ -1,3 +1,17 @@
+# Getting started
+
+### Developpment
+
+```
+npm start
+```
+
+### Production
+
+```
+npm run build
+```
+
 # GETTING STARTTED
 
 ## Application structure
