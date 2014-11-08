@@ -1,6 +1,9 @@
-# Generator Angular Devstack v0.1.7 [![Build Status](https://travis-ci.org/ghoullier/core.js.png?branch=master)](https://travis-ci.org/ghoullier/core.js)
+# Generator Angular Devstack v0.1.8
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ghoullier/generator-angular-devstack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/ghoullier/generator-angular-devstack.svg?style=flat&branch=master)](https://travis-ci.org/ghoullier/generator-angular-devstack)
+[![Dependency Status](http://img.shields.io/gemnasium/ghoullier/generator-angular-devstack.svg?style=flat)](https://gemnasium.com/ghoullier/generator-angular-devstack)
+
 
 Provide structure and automation to manage AngularJS projects.
 
