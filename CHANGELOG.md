@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.1.6 (2014-11-08)
+
+#### Features
+
+- Improve generated project documentation
+
 ## 0.1.5 (2014-11-08)
 
 #### Features
