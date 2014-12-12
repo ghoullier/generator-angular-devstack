@@ -2,5 +2,5 @@
 
 module.exports = angular
   .module('<%= appname %>.common', [])
-  .factory('Tracer', require('./services/tracer'))
+  .factory('Logger', require('./services/logger'))
 ;

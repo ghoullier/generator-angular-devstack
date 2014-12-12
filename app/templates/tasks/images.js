@@ -1,9 +1,8 @@
 var gulp = require('gulp');
-var refresh = require('gulp-livereload');
 var plumber = require('gulp-plumber');
-var lrserver = require('./live-reload');
-var paths = require('./paths');
-var handlers = require('./handlers');
+var notifyer = require('./utils/notifyer');
+var paths = require('./utils/paths');
+var handlers = require('./utils/handlers');
 
 // Images task
 module.exports = function() {
@@ -13,5 +12,7 @@ module.exports = function() {
       errorHandler: handlers.onGenericError
     }))
     .pipe(gulp.dest(paths.dist.images))
-    .pipe(refresh(lrserver));
+    // Notify for live reload
+    .pipe(notifyer.reload())
+  ;
 };
