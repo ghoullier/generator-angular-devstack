@@ -8,5 +8,6 @@ module.exports = angular
     '<%= appname %>.templates'
   ])
   .config(require('./config/route'))
-  .controller('IndexController', require('./controllers/index'))
+  .controller('Index', require('./controllers/index'))
+  .controller('List', require('./controllers/list'))
 ;

@@ -1,9 +1,12 @@
 {
   "name": "<%= appname %>",
   "dependencies": {
-    "angular": "~1.3.0",
+    "angular": "~1.3.6",
     "angular-ui-router": "~0.2.11"
   },
   "devDependencies": {
+  },
+  "resolutions": {
+    "angular": "~1.3.6"
   }
 }

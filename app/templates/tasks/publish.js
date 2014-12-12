@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
 var pkg = require('../package');
-var paths = require('./paths');
+var paths = require('./utils/paths');
 
 module.exports = function() {
   return gulp.src([paths.dist.root + '**/*.*'])
@@ -10,4 +10,5 @@ module.exports = function() {
       branch : 'gh-pages',
       cacheDir : __dirname + '/../.publish/'
     }))
+  ;
 };

@@ -8,9 +8,15 @@ function RouteConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('index', {
       url: '/',
-      templateUrl: 'views/index.html',
-      controller: 'IndexController as vm'
-    });
+      templateUrl: 'partials/views/index.html',
+      controller: 'Index as vm'
+    })
+    .state('list', {
+      url: '/list',
+      templateUrl: 'partials/views/list.html',
+      controller: 'List as vm'
+    })
+  ;
   // Default route
   $urlRouterProvider.otherwise('/');
   // Configure html5

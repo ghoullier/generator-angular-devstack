@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var plumber = require('gulp-plumber');
-var paths = require('./paths');
-var handlers = require('./handlers');
+var paths = require('./utils/paths');
+var handlers = require('./utils/handlers');
 
 // JSHint task
 module.exports = function() {
@@ -13,5 +13,6 @@ module.exports = function() {
       errorHandler: handlers.onGenericError
     }))
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('default'))
+  ;
 };

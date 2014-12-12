@@ -14,6 +14,30 @@ npm run build
 
 ## First steps
 
+#### Add dependency using bower
+
+> Example with angular-bootstrap
+
+- **--save** add dependency in  bower.json
+- **--force-latest** force resolution to the latest version
+
+```sh
+node node_modules/.bin/bower install angular-bootstrap --save --force-latest
+```
+
+Include dependency in **app/scripts/vendor.js**
+
+```js
+'use strict';
+
+// Require vendors
+require('../../vendor/angular/angular');
+require('../../vendor/angular-ui-router/release/angular-ui-router');
+// Your new dependency
+require('../../vendor/angular-bootstrap/ui-bootstrap-tpls');
+```
+
+
 #### Controller
 
 > Controllers should be declared in module <%= appname %>.ui.

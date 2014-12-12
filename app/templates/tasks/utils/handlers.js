@@ -1,3 +1,5 @@
+'use strict';
+
 var util = require('gulp-util');
 
 function onGenericError(error) {

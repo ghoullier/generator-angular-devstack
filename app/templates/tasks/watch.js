@@ -1,5 +1,8 @@
+'use strict';
+
 var gulp = require('gulp');
-var paths = require('./paths');
+var paths = require('./utils/paths');
+var entries = paths.sources.entries;
 
 module.exports = function() {
   // Watch all application scripts
@@ -8,7 +11,7 @@ module.exports = function() {
     'scripts.app'
   ]);
   // Watch vendor script
-  gulp.watch([paths.sources.vendorJs], [
+  gulp.watch([entries.vendor], [
     'scripts.vendor'
   ]);
   // Watch styles
@@ -16,11 +19,11 @@ module.exports = function() {
     'styles'
   ]);
   // Watch html files
-  gulp.watch([paths.sources.mainHtml], [
+  gulp.watch([entries.html], [
     'views'
   ]);
   // Watch views
-  gulp.watch([paths.sources.views], [
+  gulp.watch([paths.sources.partials], [
     'templates'
   ]);
   // Watch images
