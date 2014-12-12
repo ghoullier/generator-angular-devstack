@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.0.0 (2014-12-13)
+
+> This version is no longer compatible with 0.x
+
+#### Features
+
+- All new projet structure
+- New live reload implementation
+- Add environnement driven configuration files
+- New sourcemaps implementation
+- Update npm dependencies
+
 ## 0.1.8 (2014-11-08)
 
 #### Features
