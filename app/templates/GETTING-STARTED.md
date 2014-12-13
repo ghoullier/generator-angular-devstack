@@ -91,16 +91,16 @@ Routes are described in this file **app/scripts/modules/ui/config/route.js**
 $stateProvider
   .state('index', {
     url: '/',
-    templateUrl: 'views/index.html',
+    templateUrl: 'partials/views/index.html',
     controller: 'IndexController as vm'
   });
 ```
 
-#### Views
+#### Partials
 
-Views associated to templateUrl should be placed in **app/views/**
+Views associated to templateUrl should be placed in **app/partials/**
 
-HTML files in this folder are dynamicly injected in the following file (**app/scripts/modules/templates/module.js**).
+HTML files in this folder are dynamically injected in the following file (**app/scripts/modules/templates/module.js**).
 
 ## Application structure
 
@@ -110,11 +110,12 @@ HTML files in this folder are dynamicly injected in the following file (**app/sc
 ├── bower.json
 ├── Gulpfile.js
 ├── package.json
-├── app             // Where you code
-│   ├── scripts
+├── src             // Where you code
+│   ├── app         // Javascript files
+│   ├── config
+│   ├── partials    // AngularJS views
 │   ├── styles
 │   │   └── images  // Images files
-│   ├── views       // AngularJS views
 │   └── index.html
 └── tasks           // Gulp tasks
 ```
@@ -128,7 +129,7 @@ HTML files in this folder are dynamicly injected in the following file (**app/sc
 │   ├── data        // Data Access Services
 │   ├── templates   // Generated Views
 │   └── ui          // UI Layer (Controllers, Directives, Filters, ...)
-└── main.js
+└── app.js
 ```
 
 > Module example
