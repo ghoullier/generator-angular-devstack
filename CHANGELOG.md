@@ -4,6 +4,12 @@
 
 #### Fix
 
+- Update npm dependencies
+
+## 1.0.1 (2014-12-13)
+
+#### Fix
+
 - Improve getting-started
 
 ## 1.0.0 (2014-12-13)
@@ -26,7 +32,7 @@
 
 ## 0.1.7 (2014-11-08)
 
-#### Features
+#### Fix
 
 - Update npm dependencies
 
