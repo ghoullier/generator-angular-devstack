@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.1 (2014-12-13)
+
+#### Fix
+
+- Improve getting-started
+
 ## 1.0.0 (2014-12-13)
 
 > This version is no longer compatible with 0.x

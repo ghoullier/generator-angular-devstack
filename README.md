@@ -10,7 +10,6 @@ Provide structure and automation to manage AngularJS projects.
 ## Documentation
 
 - [CHANGELOG](./CHANGELOG.md)
-- [GETTING-STARTED](./GETTING-STARTED.md)
 
 ## Installation
 
