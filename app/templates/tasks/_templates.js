@@ -13,6 +13,7 @@ module.exports = function () {
     .pipe(cache({
       filename: 'module.js',
       module: '<%= appname %>.templates',
+      moduleSystem: 'Browserify',
       root: 'partials/',
       standalone: true
     }))
