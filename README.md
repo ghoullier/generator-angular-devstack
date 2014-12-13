@@ -1,4 +1,4 @@
-# Generator Angular Devstack v0.1.8
+# Generator Angular Devstack v1.0.0
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ghoullier/generator-angular-devstack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](http://img.shields.io/travis/ghoullier/generator-angular-devstack.svg?style=flat)](http://travis-ci.org/ghoullier/generator-angular-devstack)
@@ -14,7 +14,7 @@ Provide structure and automation to manage AngularJS projects.
 
 ## Installation
 
-> Global installation of gulp and bower is optionnal
+> Global installation of gulp and bower is optional
 
 ```
 # Install yeoman generator
