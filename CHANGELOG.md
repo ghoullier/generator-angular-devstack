@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.3 (2014-12-13)
+
+#### Fix
+
+- Update moduleSystem in template task
+
 ## 1.0.1 (2014-12-13)
 
 #### Fix
