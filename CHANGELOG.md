@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.5 (2014-12-14)
+
+#### Fix
+
+- Change timeout in test command
+
 ## 1.0.4 (2014-12-14)
 
 #### Fix
