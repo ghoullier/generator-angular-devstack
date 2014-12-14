@@ -6,7 +6,7 @@ var helpers = generator.test;
 var assert = generator.assert;
 
 describe('Install', function base() {
-  this.timeout(60 * 1000);
+  this.timeout(5 * 60 * 1000);
 
   var generated;
 
