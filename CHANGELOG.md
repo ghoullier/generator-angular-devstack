@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.4 (2014-12-14)
+
+#### Fix
+
+- Update watch task
+
 ## 1.0.3 (2014-12-13)
 
 #### Fix
