@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.3 (2014-12-23)
+
+#### Fix
+
+- Fix missing baseHref template variables
+
 ## 1.1.2 (2014-12-23)
 
 #### Fix
