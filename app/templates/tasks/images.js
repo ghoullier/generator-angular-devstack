@@ -1,5 +1,8 @@
+'use strict';
+
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
+
 var notifyer = require('./utils/notifyer');
 var paths = require('./utils/paths');
 var handlers = require('./utils/handlers');

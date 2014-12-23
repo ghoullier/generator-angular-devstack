@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var paths = require('./utils/paths');
+
 var entries = paths.sources.entries;
 
 module.exports = function() {
@@ -20,7 +21,7 @@ module.exports = function() {
   ]);
   // Watch html files
   gulp.watch([entries.html], [
-    'html'
+    'views'
   ]);
   // Watch views
   gulp.watch([paths.sources.partials], [

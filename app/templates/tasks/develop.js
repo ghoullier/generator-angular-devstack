@@ -1,6 +1,7 @@
 'use strict';
 
 var util = require('gulp-util');
+
 var config = require('./server/config');
 
 module.exports = function() {

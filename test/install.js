@@ -74,11 +74,13 @@ describe('Install', function base() {
       'tasks/server/config.js',
       'tasks/server/http.js',
       'tasks/server/live-reload.js',
-      'tasks/utils/env.js',
+      'tasks/utils/cli-args.js',
+      'tasks/utils/config.js',
       'tasks/utils/event-emitter.js',
       'tasks/utils/handlers.js',
       'tasks/utils/notifyer.js',
-      'tasks/utils/paths.js'
+      'tasks/utils/paths.js',
+      'tasks/utils/string.js'
     ];
     generated.on('end', function () {
       assert.file(expected);
