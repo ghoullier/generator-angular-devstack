@@ -1,11 +1,11 @@
 {
   "name": "generator-angular-devstack",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Yeoman generator for robust AngularJS applications",
   "main": "app/index.js",
   "scripts": {
     "pretest": "npm install",
-    "test": "node node_modules/.bin/mocha test/install.js"
+    "test": "mocha test/install.js"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "dependencies": {
     "chalk": "^0.5.0",
     "lodash": "~2.4.1",
-    "yeoman-generator": "^0.18.3",
+    "yeoman-generator": "~0.17.0",
     "yosay": "^1.0.0"
   },
   "devDependencies": {

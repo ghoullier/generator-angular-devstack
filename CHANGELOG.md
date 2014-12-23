@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.0 (2014-12-23)
+
+#### Improvements
+
+- Better environment driven config
+
 ## 1.0.5 (2014-12-14)
 
 #### Fix

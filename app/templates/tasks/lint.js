@@ -1,6 +1,9 @@
+'use strict';
+
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var plumber = require('gulp-plumber');
+
 var paths = require('./utils/paths');
 var handlers = require('./utils/handlers');
 
