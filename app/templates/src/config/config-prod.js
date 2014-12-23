@@ -1,5 +1,8 @@
 'use strict';
 
 module.exports = {
-  logLevel: 'warn'
+  logLevel: 'warn',
+  templated: {
+    baseHref: '/'
+  }
 };
