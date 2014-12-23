@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.1 (2014-12-23)
+
+#### Fix
+
+- Fix missing initial config structure
+
 ## 1.1.0 (2014-12-23)
 
 #### Improvements
