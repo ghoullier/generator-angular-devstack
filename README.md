@@ -1,4 +1,4 @@
-# Generator Angular Devstack v1.1.1
+# Generator Angular Devstack v1.1.2
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ghoullier/generator-angular-devstack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](http://img.shields.io/travis/ghoullier/generator-angular-devstack.svg?style=flat)](http://travis-ci.org/ghoullier/generator-angular-devstack)

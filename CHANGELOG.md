@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.2 (2014-12-23)
+
+#### Fix
+
+- Fix missing initial template variables
+
 ## 1.1.1 (2014-12-23)
 
 #### Fix
