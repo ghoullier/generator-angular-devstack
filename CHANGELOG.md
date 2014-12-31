@@ -1,10 +1,16 @@
 # CHANGELOG
 
+## 1.1.6 (2014-12-31)
+
+#### Fix
+
+- Fix task issue in watch html files
+
 ## 1.1.5 (2014-12-31)
 
 #### Features
 
-- Add compiler optimisation in prod envrionment
+- Add compiler optimisation in prod environment
 
 ## 1.1.4 (2014-12-23)
 
