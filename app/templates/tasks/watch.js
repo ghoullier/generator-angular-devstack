@@ -21,9 +21,9 @@ module.exports = function() {
   ]);
   // Watch html files
   gulp.watch([entries.html], [
-    'views'
+    'html'
   ]);
-  // Watch views
+  // Watch templates
   gulp.watch([paths.sources.partials], [
     'templates'
   ]);

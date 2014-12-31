@@ -33,7 +33,7 @@ gulp.task('scripts.app', require('./tasks/scripts-app'));
 // Vendor scripts task
 gulp.task('scripts.vendor', require('./tasks/scripts-vendor'));
 
-// Views task
+// Html task
 gulp.task('html', require('./tasks/html'));
 
 // Images task
