@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.1.5 (2014-12-31)
+
+#### Features
+
+- Add compiler optimisation in prod envrionment
+
 ## 1.1.4 (2014-12-23)
 
 #### Fix

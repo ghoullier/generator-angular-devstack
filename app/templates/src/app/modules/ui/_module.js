@@ -7,7 +7,9 @@ module.exports = angular
     '<%= appname %>.data',
     '<%= appname %>.templates'
   ])
+
   .config(require('./config/route'))
+
   .controller('Index', require('./controllers/index'))
   .controller('List', require('./controllers/list'))
 ;
