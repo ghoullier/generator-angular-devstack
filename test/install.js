@@ -40,6 +40,7 @@ describe('Install', function base() {
       'src/app/modules/data/services/faker.js',
       'src/app/modules/templates/.gitignore',
       'src/app/modules/ui/module.js',
+      'src/app/modules/ui/config/compiler.js',
       'src/app/modules/ui/config/route.js',
       'src/app/modules/ui/controllers/index.js',
       'src/app/modules/ui/controllers/list.js',

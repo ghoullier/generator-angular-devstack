@@ -58,6 +58,7 @@
     "src/app/vendor.js",
     "src/app/modules/common/services/logger.js",
     "src/app/modules/data/services/faker.js",
+    "src/app/modules/ui/config/compiler.js",
     "src/app/modules/ui/config/route.js",
     "src/app/modules/ui/controllers/index.js",
     "src/app/modules/ui/controllers/list.js",
