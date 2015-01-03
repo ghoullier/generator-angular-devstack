@@ -2,6 +2,7 @@
   "name": "<%= appname %>",
   "description": "<%= appname %> generated with yeoman-angular-devstack",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "postinstall": "bower install",
     "postupdate": "bower update",
