@@ -1,9 +1,9 @@
 # Generator Angular Devstack
 
 [![NPM version][npm-version-image]][npm-url]
-[![Gitter](gitter-image)](gitter-url)
-[![Build Status](build-status-image)](build-status-url)
-[![Dependency Status](dependency-status-image)](dependency-status-url)
+[![Gitter][gitter-image]][gitter-url]
+[![Build Status][build-status-image]][build-status-url]
+[![Dependency Status][dependency-status-image]][dependency-status-url]
 
 
 Provide structure and automation to manage AngularJS projects.
