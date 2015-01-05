@@ -1,4 +1,4 @@
-# Generator Angular Devstack [![NPM version][npm-version-image]][npm-url] 
+# Generator Angular Devstack [![NPM version][npm-version-image]][npm-url]
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ghoullier/generator-angular-devstack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](http://img.shields.io/travis/ghoullier/generator-angular-devstack.svg?style=flat)](http://travis-ci.org/ghoullier/generator-angular-devstack)
@@ -31,3 +31,6 @@ Build your application using npm script
 ```
 npm run build
 ```
+
+[npm-url]: https://npmjs.org/package/generator-angular-devstack
+[npm-version-image]: http://img.shields.io/npm/v/generator-angular-devstack.svg?style=flat-square
