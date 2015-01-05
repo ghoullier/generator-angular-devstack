@@ -1,8 +1,9 @@
-# Generator Angular Devstack [![NPM version][npm-version-image]][npm-url]
+# Generator Angular Devstack
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ghoullier/generator-angular-devstack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](http://img.shields.io/travis/ghoullier/generator-angular-devstack.svg?style=flat)](http://travis-ci.org/ghoullier/generator-angular-devstack)
-[![Dependency Status](http://img.shields.io/gemnasium/ghoullier/generator-angular-devstack.svg?style=flat)](https://gemnasium.com/ghoullier/generator-angular-devstack)
+[![NPM version][npm-version-image]][npm-url]
+[![Gitter](gitter-image)](gitter-url)
+[![Build Status](build-status-image)](build-status-url)
+[![Dependency Status](dependency-status-image)](dependency-status-url)
 
 
 Provide structure and automation to manage AngularJS projects.
@@ -32,5 +33,14 @@ Build your application using npm script
 npm run build
 ```
 
-[npm-url]: https://npmjs.org/package/generator-angular-devstack
+[gitter-image]: https://badges.gitter.im/Join Chat.svg
+[gitter-url]: https://gitter.im/ghoullier/generator-angular-devstack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
+[build-status-image]: http://img.shields.io/travis/ghoullier/generator-angular-devstack.svg?style=flat
+[build-status-url]: http://travis-ci.org/ghoullier/generator-angular-devstack
+
+[dependency-status-image]: http://img.shields.io/gemnasium/ghoullier/generator-angular-devstack.svg?style=flat
+[dependency-status-url]: https://gemnasium.com/ghoullier/generator-angular-devstack
+
 [npm-version-image]: http://img.shields.io/npm/v/generator-angular-devstack.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/generator-angular-devstack
