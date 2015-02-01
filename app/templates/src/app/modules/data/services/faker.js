@@ -1,12 +1,7 @@
 'use strict';
 
-/**
- * @ngInject
- */
-function Faker() {
-  var service = {};
-
-  function getItems() {
+export default class Faker {
+  getItems() {
     var items = [];
     var size = Math.ceil(Math.random() * 10);
     for (var i = 0; i < size; ++i) {
@@ -17,11 +12,4 @@ function Faker() {
     }
     return items;
   }
-
-  // Exports
-  service.getItems = getItems;
-
-  return service;
 }
-
-module.exports = Faker;

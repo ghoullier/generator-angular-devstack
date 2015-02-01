@@ -1,21 +1,20 @@
 'use strict';
 
-var config = require('../../../config');
+export default class LoggerProvider {
+  constructor() {
+    this.levels = ['log', 'trace', 'debug', 'info', 'warn', 'error'];
+    this.logLevel = 0;
+  }
 
-var levels = ['log', 'trace', 'debug', 'info', 'warn', 'error'];
-var logLevel = levels.indexOf(config.logLevel || 'log');
+  setLogLevel(logLevel) {
+    this.logLevel = logLevel;
+  }
 
-/**
- * @ngInject()
- */
-function Logger($log) {
-  // Interface
-  var service = {};
-  // Enable correct log level
-  levels.forEach(function onEachLogLevel(level) {
-    service[level] = (levels.indexOf(level) >= logLevel) ? $log[level] : angular.noop;
-  });
-  return service;
+  $get/*@ngInject*/($log) {
+    var logger = {};
+    this.levels.forEach(function onEachLogLevel(level) {
+      logger[level] = (this.levels.indexOf(level) >= this.logLevel) ? $log[level] : angular.noop;
+    }.bind(this));
+    return logger;
+  }
 }
-
-module.exports = Logger;

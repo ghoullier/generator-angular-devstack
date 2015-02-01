@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html data-ng-app="<%= appname %>.ui" data-ng-strict-di>
+<html data-ng-app="<%= appname %>.ui">
 <head>
-  <base href="<%= baseHref %>" />
+  <base href="<%= BASE_HREF %>" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Angular Devstack</title>
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="<%= BASE_HREF %>css/main.css" />
 </head>
 <body>
   <div class="Wrapper">
@@ -15,7 +15,7 @@
     </nav>
     <main data-ui-view></main>
   </div>
-  <script defer src="<%= baseHref %>js/vendor.js"></script>
-  <script defer src="<%= baseHref %>js/app.js"></script>
+  <script defer src="<%= BASE_HREF %>js/vendor.js"></script>
+  <script defer src="<%= BASE_HREF %>js/app.js"></script>
 </body>
 </html>

@@ -1,9 +1,11 @@
 'use strict';
 
+export default RouterConfig;
+
 /**
  * @ngInject
  */
-function RouteConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+function RouterConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   // Declare routes
   $stateProvider
     .state('index', {
@@ -22,5 +24,3 @@ function RouteConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   // Configure html5
   $locationProvider.html5Mode(true);
 }
-
-module.exports = RouteConfig;

@@ -1,9 +1,15 @@
 'use strict';
 
-module.exports = angular
-  .module('<%= appname %>.common', [])
+import AppConfig from '../../config';
 
-  .constant('AppConfig', require('../../config'))
+import LoggerProvider from './services/logger';
 
-  .factory('Logger', require('./services/logger'))
+export default angular
+  .module('<%= appname %>.common', [
+    'ng'
+  ])
+
+  .constant('AppConfig', AppConfig)
+
+  .provider('Logger', LoggerProvider)
 ;

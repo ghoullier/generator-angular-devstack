@@ -1,9 +1,13 @@
 'use strict';
 
-module.exports = angular
+import Faker from './services/faker';
+
+export default angular
   .module('<%= appname %>.data', [
+    'ng',
+
     '<%= appname %>.common'
   ])
 
-  .factory('Faker', require('./services/faker'))
+  .service('Faker', Faker)
 ;

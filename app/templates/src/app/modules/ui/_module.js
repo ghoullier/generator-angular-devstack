@@ -1,15 +1,27 @@
 'use strict';
 
-module.exports = angular
+import compiler from './config/compiler';
+import logger from './config/logger';
+import router from './config/router';
+
+import Index from'./controllers/index';
+import List from'./controllers/list';
+
+export default angular
   .module('<%= appname %>.ui', [
+    'ng',
+
     'ui.router',
+
     '<%= appname %>.common',
     '<%= appname %>.data',
     '<%= appname %>.templates'
   ])
 
-  .config(require('./config/route'))
+  .config(compiler)
+  .config(logger)
+  .config(router)
 
-  .controller('Index', require('./controllers/index'))
-  .controller('List', require('./controllers/list'))
+  .controller('Index', Index)
+  .controller('List', List)
 ;

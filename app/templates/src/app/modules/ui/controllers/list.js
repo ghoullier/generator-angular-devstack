@@ -1,14 +1,8 @@
 'use strict';
 
-/**
- * @ngInject
- */
-function List(Logger, Faker) {
-  Logger.debug('List');
-  // ViewModel
-  var vm = this;
-
-  vm.items = Faker.getItems();
+export default class List {
+  constructor/*@ngInject*/(Logger, Faker) {
+    Logger.log('List::constructor');
+    this.items = Faker.getItems();
+  }
 }
-
-module.exports = List;

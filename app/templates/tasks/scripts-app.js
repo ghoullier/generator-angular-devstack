@@ -5,6 +5,7 @@ var util = require('gulp-util');
 var uglify = require('gulp-uglify');
 var browserify = require('browserify');
 var ngAnnotate = require('browserify-ngannotate');
+var esNext = require('6to5ify');
 var stream = require('vinyl-source-stream2');
 
 var args = require('./utils/cli-args');
@@ -18,9 +19,10 @@ var entries = paths.sources.entries;
 module.exports = function() {
   var isProduction = -1 < env.indexOf('prod');
   return browserify({
-      entries: entries.app,
-      debug: !isProduction
+      entries: entries.app
     })
+    // Turn code to ES5
+    .transform(esNext)
     // Anotate angular di
     .transform({
       add: true,

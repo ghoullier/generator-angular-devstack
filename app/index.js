@@ -15,7 +15,7 @@ var AngularDevstackGenerator = yeoman.generators.Base.extend({
 
     this.argument('appname', { type: String, required: false });
     this.appname = this.appname || path.basename(process.cwd());
-    this.baseHref = '<%= baseHref %>';
+    this.BASE_HREF = '<%= BASE_HREF %>';
   },
 
   info: function () {
