@@ -1,9 +1,16 @@
 'use strict';
 
 var gulp = require('gulp');
+
+var args = require('./utils/cli-args');
 var paths = require('./utils/paths');
+var string = require('./utils/string');
 
 var entries = paths.sources.entries;
+var env = args.env || 'dev';
+var config = string.compile(paths.sources.config, {
+  env: env
+});
 
 module.exports = function() {
   // Watch all application scripts
@@ -30,5 +37,9 @@ module.exports = function() {
   // Watch images
   gulp.watch([paths.sources.images], [
     'images'
+  ]);
+  // Watch config
+  gulp.watch([config], [
+    'config'
   ]);
 };
