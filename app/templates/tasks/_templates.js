@@ -17,7 +17,7 @@ module.exports = function () {
       errorHandler: handlers.onGenericError
     }))
     // Inject static template variables
-    .pipe(template(config.templated))
+    .pipe(template(config.TEMPLATED_VARIABLES))
     // Will minimify html
     .pipe(htmlmin({
       collapseWhitespace: true

@@ -2,49 +2,57 @@
   "name": "<%= appname %>",
   "description": "<%= appname %> generated with yeoman-angular-devstack",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "postinstall": "bower install",
     "postupdate": "bower update",
+
     "prestart": "npm install",
     "start": "gulp develop --env=dev",
+
     "prebuild": "npm install",
     "build": "gulp build --env=prod",
+
+    "prepackage": "npm run build",
+    "package": "gulp package",
+
     "predeploy": "npm run build",
     "deploy": "gulp publish --env=prod",
+
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "protractor": "protractor tests/e2e/protractor.conf.js"
   },
   "devDependencies": {
     "bower": "^1.3.12",
-    "browserify": "^7.0.0",
-    "browserify-ngannotate": "^0.4.0",
-    "compression": "^1.2.1",
-    "connect-livereload": "^0.5.2",
-    "del": "^1.0.0",
-    "express": "^4.10.4",
-    "gulp": "^3.8.10",
-    "gulp-angular-templatecache": "^1.4.2",
-    "gulp-autoprefixer": "2.0.0",
-    "gulp-concat": "^2.4.2",
+    "browserify": "^9.0.3",
+    "browserify-ngannotate": "^0.7.1",
+    "browser-sync": "^2.2.1",
+    "compression": "^1.4.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-concat": "^2.5.2",
     "gulp-embedlr": "^0.5.2",
-    "gulp-htmlmin": "^0.2.0",
     "gulp-gh-pages": "^0.4.0",
-    "gulp-jshint": "^1.9.0",
-    "gulp-livereload": "^2.1.0",
+    "gulp-gzip": "^1.0.0",
+    "gulp-htmlmin": "^1.1.1",
+    "gulp-jshint": "^1.9.2",
     "gulp-plumber": "^0.6.6",
     "gulp-rename": "^1.2.0",
-    "gulp-sass": "^1.2.4",
-    "gulp-sourcemaps": "^1.2.8",
-    "gulp-template": "^1.1.1",
-    "gulp-uglify": "^1.0.1",
-    "gulp-util": "^3.0.1",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-tar": "^1.4.0",
+    "gulp-template": "^3.0.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.3",
     "minimist": "^1.1.0",
-    "tiny-lr": "0.1.4",
+    "run-sequence": "^1.0.2",
     "vinyl-source-stream2": "^0.1.1"
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "MIT"
+  "license": "Niji"
 }

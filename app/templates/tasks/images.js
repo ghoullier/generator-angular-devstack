@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 
-var notifyer = require('./utils/notifyer');
 var paths = require('./utils/paths');
 var handlers = require('./utils/handlers');
 
@@ -15,7 +14,5 @@ module.exports = function() {
       errorHandler: handlers.onGenericError
     }))
     .pipe(gulp.dest(paths.dist.images))
-    // Notify for live reload
-    .pipe(notifyer.reload())
   ;
 };

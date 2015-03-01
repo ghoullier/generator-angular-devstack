@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  logLevel: 'log',
-  ngDebugInfoEnabled: true,
-  templated: {
-    baseHref: '/'
+  LOG_LEVEL: 'log',
+  NG_DEBUG_INFO_ENABLED: true,
+  TEMPLATED_VARIABLES: {
+    BASE_HREF: '/'
   }
 };

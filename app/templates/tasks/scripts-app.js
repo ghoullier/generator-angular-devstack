@@ -10,7 +10,6 @@ var stream = require('vinyl-source-stream2');
 var args = require('./utils/cli-args');
 var paths = require('./utils/paths');
 var handlers = require('./utils/handlers');
-var notifyer = require('./utils/notifyer');
 
 var env = args.env || 'dev';
 var entries = paths.sources.entries;
@@ -38,7 +37,5 @@ module.exports = function() {
     }) : util.noop())
     // Output it to our dist folder
     .pipe(gulp.dest(paths.dist.scripts))
-    // Notify for live reload
-    .pipe(notifyer.reload())
   ;
 };

@@ -6,6 +6,7 @@
 /npm-debug.log
 /dist/
 /vendor/
+/*.tar.gz
 
 # Ignore IDE files
 /.idea/

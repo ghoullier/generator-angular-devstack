@@ -1,21 +1,33 @@
 'use strict';
 
-var config = require('../../../config');
-
 var levels = ['log', 'trace', 'debug', 'info', 'warn', 'error'];
-var logLevel = levels.indexOf(config.logLevel || 'log');
+var logLevel = 0;
 
-/**
- * @ngInject()
- */
-function Logger($log) {
-  // Interface
-  var service = {};
-  // Enable correct log level
-  levels.forEach(function onEachLogLevel(level) {
-    service[level] = (levels.indexOf(level) >= logLevel) ? $log[level] : angular.noop;
-  });
-  return service;
+function LoggerProvider() {
+  // DDO
+  return {
+    setLogLevel: setLogLevel,
+    $get: $get
+  };
+
+  // Implementation
+
+  /**
+   * @ngInject
+   */
+  function $get($log) {
+    // Interface
+    var service = {};
+    // Enable correct log level
+    levels.forEach(function onEachLogLevel(level) {
+      service[level] = (levels.indexOf(level) >= logLevel) ? $log[level] : angular.noop;
+    });
+    return service;
+  }
+
+  function setLogLevel(level) {
+    logLevel = levels.indexOf(level);
+  }
 }
 
-module.exports = Logger;
+module.exports = LoggerProvider;

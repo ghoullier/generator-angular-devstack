@@ -6,11 +6,11 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync');
 
 var args = require('./utils/cli-args');
 var paths = require('./utils/paths');
 var handlers = require('./utils/handlers');
-var notifyer = require('./utils/notifyer');
 
 var env = args.env || 'dev';
 
@@ -37,6 +37,8 @@ module.exports = function() {
     // These last two should look familiar now :)
     .pipe(gulp.dest(paths.dist.styles))
     // Notify for live reload
-    .pipe(notifyer.reload())
+    .pipe(browserSync.reload({
+      stream: true
+    }))
   ;
 };

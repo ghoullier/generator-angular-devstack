@@ -13,7 +13,7 @@ gulp.task('templates', require('./tasks/templates'));
 gulp.task('config', require('./tasks/config'));
 
 // Build task
-gulp.task('build', ['clean', 'config', 'templates'], require('./tasks/build'));
+gulp.task('build', require('./tasks/build'));
 
 // Watch task
 gulp.task('watch', ['build'], require('./tasks/watch'));
@@ -33,11 +33,17 @@ gulp.task('scripts.app', require('./tasks/scripts-app'));
 // Vendor scripts task
 gulp.task('scripts.vendor', require('./tasks/scripts-vendor'));
 
-// Html task
+// Views task
 gulp.task('html', require('./tasks/html'));
+
+// Fonts task
+gulp.task('fonts', require('./tasks/fonts'));
 
 // Images task
 gulp.task('images', require('./tasks/images'));
+
+// Package task
+gulp.task('package', require('./tasks/package'));
 
 // Publish task
 gulp.task('publish', require('./tasks/publish'));

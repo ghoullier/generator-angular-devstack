@@ -9,8 +9,12 @@ var handlers = require('./utils/handlers');
 
 // JSHint task
 module.exports = function() {
-  var ignored = ['!', paths.modules.templates, 'module.js'].join('');
-  return gulp.src([paths.sources.scripts, ignored])
+  var files = [
+    paths.sources.scripts,
+    '!' + paths.modules.templates + 'module.js',
+    '!' + paths.sources.entries.config
+  ];
+  return gulp.src(files)
     // Catch errors
     .pipe(plumber({
       errorHandler: handlers.onGenericError

@@ -1,20 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
-var rename = require('gulp-rename');
+var template = require('gulp-template');
 
-var args = require('./utils/cli-args');
+var config = require('./utils/config');
 var paths = require('./utils/paths');
-var string = require('./utils/string');
-
-var env = args.env || 'dev';
-var config = string.compile(paths.sources.config, {
-  env: env
-});
 
 module.exports = function() {
-  return gulp.src(config)
-    .pipe(rename('config.js'))
-    .pipe(gulp.dest(paths.sources.app))
+  return gulp
+    .src(paths.sources.entries.config)
+    .pipe(template({
+      APP_CONFIG: JSON.stringify(config, null, 2)
+    }))
+    .pipe(gulp.dest(paths.dist.scripts))
   ;
 };
