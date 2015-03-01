@@ -1,9 +1,15 @@
 'use strict';
 
+var pkg = require('../../../../package');
+
 module.exports = angular
-  .module('<%= appname %>.common', [])
+  .module('<%= appname %>.common', [
+    'ng'
+  ])
 
-  .constant('AppConfig', require('../../config'))
+  .constant('AppVersion', pkg.version)
 
-  .factory('Logger', require('./services/logger'))
+  .provider('Logger', require('./services/logger'))
+
+  .factory('EventsEmitter', require('./services/events-emitter'))
 ;

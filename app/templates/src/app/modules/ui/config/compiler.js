@@ -4,7 +4,7 @@
  * @ngInject
  */
 function CompilerConfig($compileProvider, AppConfig) {
-  $compileProvider.debugInfoEnabled(AppConfig.ngDebugInfoEnabled);
+  $compileProvider.debugInfoEnabled(AppConfig.NG_DEBUG_INFO_ENABLED);
 }
 
 module.exports = CompilerConfig;

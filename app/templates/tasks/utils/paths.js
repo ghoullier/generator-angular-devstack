@@ -10,6 +10,7 @@ module.exports = {
     config: './src/config/config-{{env}}.js',
     entries: {
       app: './src/app/app.js',
+      config: './src/app/config.js',
       vendor: './src/app/vendor.js',
       html: './src/index.html'
     },

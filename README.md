@@ -15,21 +15,29 @@ Provide structure and automation to manage AngularJS projects.
 
 > Global installation of gulp and bower is optional
 
-```
+```console
 # Install yeoman generator
-npm install -g yo generator-angular-devstack
+$ npm install -g yo generator-angular-devstack
 # Create your project
-yo angular-devstack
-# Start dev task
-npm start
+$ yo angular-devstack
 ```
 
-## Production
+## Build the app for production
 
-Build your application using npm script
-
+```console
+$ npm run build
 ```
-npm run build
+
+## Package your app
+
+```console
+$ npm run build
+```
+
+## Deploy your app on GitHub Pages
+
+```console
+$ npm run deploy
 ```
 
 [gitter-image]: https://badges.gitter.im/Join%20Chat.svg

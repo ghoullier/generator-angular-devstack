@@ -1,40 +1,29 @@
 'use strict';
 
-var path = require('path');
-var chalk = require('chalk');
 var yeoman = require('yeoman-generator');
-var yosay = require('yosay');
 
-var application = require('./src/application');
-var model = require('./src/model');
+var prompting = require('./src/prompting');
+var writing = require('./src/writing');
 
-var AngularDevstackGenerator = yeoman.generators.Base.extend({
-  /* Initialization, evaluate appname */
-  init: function () {
+module.exports = yeoman.generators.Base.extend({
+  initializing: function () {
     this.pkg = require('../package.json');
 
-    this.argument('appname', { type: String, required: false });
-    this.appname = this.appname || path.basename(process.cwd());
-    this.baseHref = '<%= baseHref %>';
+    this.properties = {};
+
+    this.properties.templated = {
+      APP_CONFIG: '<%= APP_CONFIG %>',
+      BASE_HREF: '<%= BASE_HREF %>'
+    };
   },
 
-  info: function () {
-    this.log(yosay(
-      chalk.red('Welcome!') + '\n' +
-      chalk.yellow('You\'re using Angular Devstack!')
-    ));
-  },
+  prompting: prompting,
 
-  /* Initialize model */
-  model: model,
+  writing: writing,
 
-  /* Process files */
-  application: application,
-
-  /* Install dependencies */
   install: function () {
-    this.installDependencies();
+    this.installDependencies({
+      skipInstall: this.options['skip-install']
+    });
   }
 });
-
-module.exports = AngularDevstackGenerator;

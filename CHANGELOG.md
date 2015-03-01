@@ -1,5 +1,22 @@
 # CHANGELOG
 
+---
+
+## 1.2.0 (2014-12-31)
+
+#### Fix
+
+- Yeoman 0.18 full support
+
+#### Changes
+
+- LiveReload is now base on BrowserSync
+
+#### Features
+
+- Add news logger which support log level
+- Externalize configuration file
+
 ## 1.1.6 (2014-12-31)
 
 #### Fix
