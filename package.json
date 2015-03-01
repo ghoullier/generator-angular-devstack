@@ -3,7 +3,6 @@
   "version": "1.2.0",
   "description": "Yeoman generator for robust AngularJS applications",
   "main": "app/index.js",
-  "private": true,
   "scripts": {
     "pretest": "npm install",
     "test": "mocha"
@@ -18,6 +17,7 @@
   "keywords": [
     "yeoman-generator",
     "angular",
+    "browsersync",
     "gulp"
   ],
   "author": {
