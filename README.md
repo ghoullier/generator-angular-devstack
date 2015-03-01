@@ -22,6 +22,12 @@ $ npm install -g yo generator-angular-devstack
 $ yo angular-devstack
 ```
 
+## Serve app and watch for changes
+
+```console
+$ npm start
+```
+
 ## Build the app for production
 
 ```console
