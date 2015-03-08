@@ -13,6 +13,7 @@ module.exports = yeoman.generators.Base.extend({
 
     this.properties.templated = {
       APP_CONFIG: '<%= APP_CONFIG %>',
+      APP_VERSION: '<%= APP_VERSION %>',
       BASE_HREF: '<%= BASE_HREF %>'
     };
   },

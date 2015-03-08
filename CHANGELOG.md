@@ -2,6 +2,12 @@
 
 ---
 
+## 1.3.0 (2015-03-08)
+
+- Add pushState support
+- Improve templating
+- Fix EvenEmitter implementation
+
 ## 1.2.2 (2015-03-01)
 
 - Improve documentation

@@ -3,8 +3,7 @@
 /**
  * @ngInject
  */
-function List(Logger, Faker) {
-  Logger.debug('List');
+function List(Faker) {
   // ViewModel
   var vm = this;
 

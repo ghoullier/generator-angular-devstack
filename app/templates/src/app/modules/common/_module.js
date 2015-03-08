@@ -8,8 +8,8 @@ module.exports = angular
   ])
 
   .constant('AppVersion', pkg.version)
+  .constant('EventsEmitter', require('./services/events-emitter'))
 
   .provider('Logger', require('./services/logger'))
 
-  .factory('EventsEmitter', require('./services/events-emitter'))
 ;

@@ -1,5 +1,6 @@
 {
   "src": [
+    "CHANGELOG.md",
     "GETTING-STARTED.md",
     "STYLEGUIDE.md",
     "src/config/config-dev.js",
@@ -46,7 +47,8 @@
     "tasks/utils/config.js",
     "tasks/utils/handlers.js",
     "tasks/utils/paths.js",
-    "tasks/utils/string.js"
+    "tasks/utils/string.js",
+    "tasks/utils/templated-variables.js"
   ],
   "templated": [
     "bower.json",
