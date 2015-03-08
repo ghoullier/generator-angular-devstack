@@ -6,7 +6,7 @@
 
 - Add pushState support
 - Improve templating
-- Fix EvenEmitter implementation
+- Fix EventEmitter implementation
 
 ## 1.2.2 (2015-03-01)
 
