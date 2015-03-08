@@ -6,7 +6,7 @@ var cache = require('gulp-angular-templatecache');
 var htmlmin = require('gulp-htmlmin');
 var template = require('gulp-template');
 
-var config = require('./utils/config');
+var templated = require('./utils/templated-variables');
 var handlers = require('./utils/handlers');
 var paths = require('./utils/paths');
 
@@ -17,7 +17,7 @@ module.exports = function () {
       errorHandler: handlers.onGenericError
     }))
     // Inject static template variables
-    .pipe(template(config.TEMPLATED_VARIABLES))
+    .pipe(template(templated))
     // Will minimify html
     .pipe(htmlmin({
       collapseWhitespace: true

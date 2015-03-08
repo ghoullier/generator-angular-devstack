@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= appname %></title>
-    <link rel="stylesheet" href="<%= BASE_HREF %>css/main.css" />
+    <link rel="stylesheet" href="<%= BASE_HREF %>css/main.css?v=<%= APP_VERSION %>" />
   </head>
   <body>
     <div class="Wrapper">
@@ -15,8 +15,8 @@
       </nav>
       <main data-ui-view></main>
     </div>
-    <script defer src="<%= BASE_HREF %>js/vendor.js"></script>
-    <script defer src="<%= BASE_HREF %>js/app.js"></script>
-    <script defer src="<%= BASE_HREF %>js/config.js"></script>
+    <script src="<%= BASE_HREF %>js/vendor.js?v=<%= APP_VERSION %>"></script>
+    <script src="<%= BASE_HREF %>js/app.js?v=<%= APP_VERSION %>"></script>
+    <script src="<%= BASE_HREF %>js/config.js?v=<%= APP_VERSION %>"></script>
   </body>
 </html>

@@ -1,8 +1,9 @@
 {
   "name": "generator-angular-devstack",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Yeoman generator for robust AngularJS applications",
   "main": "app/index.js",
+  "private": true,
   "scripts": {
     "pretest": "npm install",
     "test": "mocha"
@@ -22,6 +23,7 @@
   ],
   "author": {
     "name": "Grégory Houllier",
+    "email": "gregory.houllier@niji.fr",
     "url": "https://twitter.com/ghoullier"
   },
   "contributors": [],
