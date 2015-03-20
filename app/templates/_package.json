@@ -11,7 +11,7 @@
     "start": "gulp develop --env=dev",
 
     "prebuild": "npm install",
-    "build": "gulp build --env=prod",
+    "build": "gulp build --env=prod --optimize",
 
     "prepackage": "npm run build",
     "package": "gulp package",
@@ -39,6 +39,7 @@
     "gulp-gh-pages": "^0.4.0",
     "gulp-gzip": "^1.0.0",
     "gulp-htmlmin": "^1.1.1",
+    "gulp-imagemin": "^2.2.1",
     "gulp-jshint": "^1.9.2",
     "gulp-plumber": "^0.6.6",
     "gulp-rename": "^1.2.0",

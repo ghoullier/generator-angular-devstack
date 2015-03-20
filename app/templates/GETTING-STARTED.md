@@ -1,16 +1,42 @@
 # Getting started
 
-### Developpment
+### NPM Scripts
 
+> List all available npm scripts
+
+```console
+npm run
 ```
+
+### Developement
+
+Livereload use [BrowserSync](http://www.browsersync.io)
+
+> watch + livereload
+
+```console
+# Shortcut of 'gulp develop --env=dev'
 npm start
 ```
 
 ### Production
 
-```
+> Build your application
+
+```console
+# Shortcut of 'gulp build --env=prod --optimze'
 npm run build
 ```
+
+```console
+# Shortcut of 'gulp package'
+npm run package
+```
+
+### CLI Options
+
+- --env: Select target environment
+- --optimize: Enable assets optimization
 
 ## First steps
 
@@ -21,7 +47,7 @@ npm run build
 - **--save** add dependency in  bower.json
 - **--force-latest** force resolution to the latest version
 
-```sh
+```console
 node node_modules/.bin/bower install angular-bootstrap --save --force-latest
 ```
 
@@ -104,7 +130,7 @@ HTML files in this folder are dynamically injected in the following file (**app/
 
 ## Application structure
 
-```sh
+```console
 .
 ├── README.md
 ├── bower.json
@@ -122,7 +148,7 @@ HTML files in this folder are dynamically injected in the following file (**app/
 
 ### Explanation app/scripts
 
-```sh
+```console
 .
 ├── modules         // All application modules
 │   ├── common      // Transversal Services

@@ -4,5 +4,6 @@
 
 - [CHANGELOG](./CHANGELOG.md)
 - [GETTING-STARTED](./GETTING-STARTED.md)
+- [STYLEGUIDE](./STYLEGUIDE.md)
 
 > TODO: Documentation
