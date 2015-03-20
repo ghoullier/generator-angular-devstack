@@ -57,5 +57,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "Niji"
+  "license": "MIT"
 }
