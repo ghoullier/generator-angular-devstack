@@ -2,6 +2,17 @@
 
 ---
 
+## 1.4.0 (2015-03-20)
+
+#### Fix
+
+- Fix cache on config files.
+
+#### Improvements
+
+- Add new cli option --optimize to compress assets
+- Better error message in browserify and sass tasks
+
 ## 1.3.0 (2015-03-08)
 
 - Add pushState support

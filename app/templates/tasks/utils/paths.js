@@ -7,7 +7,7 @@ module.exports = {
   },
   sources: {
     app: './src/app/',
-    config: './src/config/config-{{env}}.js',
+    config: './src/config/config-{{env}}.json',
     entries: {
       app: './src/app/app.js',
       config: './src/app/config.js',

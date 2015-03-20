@@ -10,15 +10,14 @@ var args = require('./utils/cli-args');
 var paths = require('./utils/paths');
 var handlers = require('./utils/handlers');
 
-var env = args.env || 'dev';
 var entries = paths.sources.entries;
 
 module.exports = function() {
-  var isProduction = -1 < env.indexOf('prod');
+  var optimize = args.optimize;
   return browserify({
       entries: entries.vendor,
       insertGlobals: true,
-      debug: !isProduction
+      debug: !optimize
     })
     .bundle()
     // Catch errors
@@ -26,7 +25,7 @@ module.exports = function() {
     // Bundle to a single file
     .pipe(stream('vendor.js'))
     // Minimify app js only in production
-    .pipe(isProduction ? uglify({
+    .pipe(optimize ? uglify({
       mangle: true
     }) : util.noop())
     // Output it to our dist folder

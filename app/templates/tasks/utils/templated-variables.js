@@ -6,6 +6,11 @@ var config = require('./config');
 
 var pkg = require('../../package');
 
-module.exports = merge(config.TEMPLATED_VARIABLES, {
-  APP_VERSION: pkg.version
-});
+module.exports = get
+
+
+function get() {
+  return merge(config().TEMPLATED_VARIABLES, {
+    APP_VERSION: pkg.version
+  });
+}
