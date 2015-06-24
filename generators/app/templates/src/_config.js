@@ -2,5 +2,5 @@
 
 angular
   .module('<%= appname %>.shared')
-  .constant('AppConfig', <%= APP_CONFIG %>)
+  .constant('AppConfig', <%- APP_CONFIG %>)
 ;

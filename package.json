@@ -30,6 +30,7 @@
     "browserify",
     "browsersync",
     "gulp",
+    "yeoman",
     "yeoman-generator"
   ],
   "dependencies": {
