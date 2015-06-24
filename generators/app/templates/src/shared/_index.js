@@ -1,19 +1,23 @@
-'use strict';
+import { version as AppVersion } from '../../package';
 
-var pkg = require('../../package');
+import EventsEmitter from './services/events-emitter';
+import Faker from './services/faker';
+import Logger from './services/logger';
 
-module.exports = angular
+import compiler from './config/compiler';
+import logger from './config/logger';
+
+export default angular
   .module('<%= appname %>.shared', [
     'ng'
   ])
+  .constant('AppVersion', AppVersion)
+  .constant('EventsEmitter', EventsEmitter)
 
-  .constant('AppVersion', pkg.version)
-  .constant('EventsEmitter', require('./services/events-emitter'))
+  .service('Faker', Faker)
 
-  .factory('Faker', require('./services/faker'))
+  .provider('Logger', Logger)
 
-  .provider('Logger', require('./services/logger'))
-
-  .config(require('./config/compiler'))
-  .config(require('./config/logger'))
+  .config(compiler)
+  .config(logger)
 ;

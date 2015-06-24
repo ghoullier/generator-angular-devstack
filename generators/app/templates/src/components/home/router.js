@@ -1,6 +1,6 @@
 'use strict';
 
-function RouterConfig($stateProvider) {
+export default ($stateProvider) => {
   'ngInject';
 
   // Declare routes
@@ -11,6 +11,4 @@ function RouterConfig($stateProvider) {
       controller: 'Home as vm'
     })
   ;
-}
-
-module.exports = RouterConfig;
+};

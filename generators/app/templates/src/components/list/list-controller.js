@@ -1,12 +1,7 @@
-'use strict';
+export default class ListController {
+  constructor(Faker) {
+    'ngInject';
 
-function List(Faker) {
-  'ngInject';
-
-  // ViewModel
-  var vm = this;
-
-  vm.items = Faker.getItems();
+    this.items = Faker.getItems();
+  }
 }
-
-module.exports = List;

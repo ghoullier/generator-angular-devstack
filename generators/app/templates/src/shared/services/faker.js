@@ -1,14 +1,8 @@
-'use strict';
-
-function Faker() {
-  'ngInject';
-
-  var service = {};
-
-  function getItems() {
-    var items = [];
-    var size = Math.ceil(Math.random() * 10);
-    for (var i = 0; i < size; ++i) {
+export default class Faker {
+  getItems() {
+    const items = [];
+    const size = Math.ceil(Math.random() * 10);
+    for (let i = 0; i < size; ++i) {
       items.push({
         id: i,
         name: ['data', i].join('--')
@@ -16,11 +10,4 @@ function Faker() {
     }
     return items;
   }
-
-  // Exports
-  service.getItems = getItems;
-
-  return service;
 }
-
-module.exports = Faker;

@@ -1,11 +1,13 @@
-'use strict';
+import ListController from './list-controller';
 
-module.exports = angular
+import router from './router';
+
+export default angular
   .module('<%= appname %>.components.list', [
     'ui.router'
   ])
 
-  .controller('List', require('./list-controller'))
+  .controller('List', ListController)
 
-  .config(require('./router'))
+  .config(router)
 ;

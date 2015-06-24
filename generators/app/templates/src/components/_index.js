@@ -1,10 +1,13 @@
-'use strict';
+import { name as list} from './list';
+import { name as home} from './home';
 
-module.exports = angular
+import router from './router';
+
+export default angular
   .module('<%= appname %>.components', [
-    require('./list').name,
-    require('./home').name
+    list,
+    home
   ])
 
-  .config(require('./router'))
+  .config(router)
 ;

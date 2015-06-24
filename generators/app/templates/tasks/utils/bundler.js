@@ -1,4 +1,5 @@
 import browserify from 'browserify';
+import babelify from 'babelify';
 import ngAnnotate from 'browserify-ngannotate';
 
 import args from './cli-args';
@@ -13,6 +14,7 @@ function app() {
       debug: !optimize,
       verbose: true
     })
+    .transform(babelify)
     .transform({
       add: true,
       single_quotes: true

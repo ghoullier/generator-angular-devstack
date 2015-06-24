@@ -1,11 +1,13 @@
-'use strict';
+import HomeController from './home-controller';
 
-module.exports = angular
+import router from './router';
+
+export default angular
   .module('<%= appname %>.components.home', [
     'ui.router'
   ])
 
-  .controller('Home', require('./home-controller'))
+  .controller('Home', HomeController)
 
-  .config(require('./router'))
+  .config(router)
 ;
