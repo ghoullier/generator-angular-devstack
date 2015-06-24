@@ -1,27 +1,22 @@
 'use strict';
 
-var os = require('os');
 var path = require('path');
-var yeoman = require('yeoman-generator');
-var assert = yeoman.assert;
-var helpers = yeoman.test;
+var assert = require('yeoman-generator').assert;
+var helpers = require('yeoman-generator').test;
+var os = require('os');
 
-var config = require('../app/config/files');
+var config = require('../generators/app/config/files');
 var tmp = path.join(os.tmpdir(), './yeoman-angular-devstack-test');
 
 describe('angular-devstack:app', function () {
-
   before(function (done) {
-    helpers.run(path.join(__dirname, '../app'))
+    helpers.run(path.join(__dirname, '../generators/app'))
       .inDir(tmp)
       .withOptions({
-        'skip-install': true
+        skipInstall: true
       })
-      .withPrompt({
-        flightplan: true
-      })
-      .on('end', done)
-    ;
+      .withPrompts({})
+      .on('end', done);
   });
 
   it('creates src files', function () {

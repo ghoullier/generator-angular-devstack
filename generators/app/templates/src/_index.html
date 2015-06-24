@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-app="<%= appname %>" data-ng-strict-di>
+  <head>
+    <base href="<%= BASE_HREF %>" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= appname %></title>
+    <link rel="stylesheet" href="<%= BASE_HREF %>css/main.css?v=<%= APP_VERSION %>" />
+  </head>
+  <body>
+    <div class="Wrapper">
+      <nav class="Nav">
+        <a data-ui-sref="home()" class="Nav__Link">Home</a>
+        <a data-ui-sref="list()" class="Nav__Link">List</a>
+      </nav>
+      <main data-ui-view></main>
+    </div>
+    <script src="<%= BASE_HREF %>js/vendor.js?v=<%= APP_VERSION %>"></script>
+    <script src="<%= BASE_HREF %>js/app.js?v=<%= APP_VERSION %>"></script>
+    <script src="<%= BASE_HREF %>js/config.js?v=<%= APP_VERSION %>"></script>
+  </body>
+</html>

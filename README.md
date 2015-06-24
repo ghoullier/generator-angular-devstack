@@ -34,10 +34,10 @@ $ npm start
 $ npm run build
 ```
 
-## Package your app
+## Generate an archive of your app
 
 ```console
-$ npm run build
+$ npm run archive
 ```
 
 ## Deploy your app on GitHub Pages
