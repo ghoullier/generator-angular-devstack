@@ -40,137 +40,133 @@ npm run archive
 
 ## First steps
 
-#### Add dependency using bower
-
-> Example with angular-bootstrap
-
-- **--save** add dependency in  bower.json
-- **--force-latest** force resolution to the latest version
-
-```console
-node node_modules/.bin/bower install angular-bootstrap --save --force-latest
-```
-
-Include dependency in **app/scripts/vendor.js**
-
-```js
-'use strict';
-
-// Require vendors
-require('../../vendor/angular/angular');
-require('../../vendor/angular-ui-router/release/angular-ui-router');
-// Your new dependency
-require('../../vendor/angular-bootstrap/ui-bootstrap-tpls');
-```
-
-
 #### Controller
 
-> Controllers should be declared in module <%= appname %>.ui.
+> Controllers should be declared in your component folder **src/components/<component>/**
 
 
-> @ngInject allows you to dynamicly support [Angular explicit DI](https://docs.angularjs.org/guide/di)
+> 'ngInject' allows you to dynamicly support [Angular explicit DI](https://docs.angularjs.org/guide/di)
 
 ```js
 'use strict';
 
-/**
- * @ngInject
- */
-function DateController($log) {
-  // ViewModel
-  var vm = this;
+export default class DateController {
+  constructor($log) {
+    'ngInject';
 
-  vm.date = new Date();
+    this.date = new Date();
 
-  $log.log(vm.date);
+    $log.log(this.date):
+  }
 }
-
-module.exports = DateController;
 ```
 
-Then register it in module <%= appname %>.ui.
+Then register it in module **src/components/<component>/index.js**
 
 ```js
 'use strict';
 
-module.exports = angular
-  .module('<%= appname %>.ui', [
-    'ui.router',
-    '<%= appname %>.common',
-    '<%= appname %>.data',
-    '<%= appname %>.templates'
+import HomeController from './home-controller';
+// ES6 import of your controller
+import DateController from './date-controller';
+
+import router from './router';
+
+export default angular
+  .module('<%= appname %>.components.home', [
+    'ui.router'
   ])
-  .config(require('./config/route'))
-  .controller('IndexController', require('./controllers/index'))
-  .controller('DateController', require('./controllers/date'))
+
+  .controller('Home', HomeController)
+  // Register your controller is component module
+  .controller('Date', DateController)
+
+  .config(router)
 ;
+
 ```
 
 #### Routing
 
 Application routing use [ui-router](https://github.com/angular-ui/ui-router) module.
 
-Routes are described in this file **app/scripts/modules/ui/config/route.js**
+Each component declare associated routes in a dedicated file **src/components/<component>/router.js**
 
 ```js
-$stateProvider
-  .state('index', {
-    url: '/',
-    templateUrl: 'partials/views/index.html',
-    controller: 'IndexController as vm'
-  });
+'use strict';
+
+export default ($stateProvider) => {
+  'ngInject';
+
+  // Declare routes
+  $stateProvider
+    .state('list', {
+      url: '/list',
+      templateUrl: 'components/list/partials/list.html',
+      controller: 'List as vm'
+    })
+  ;
+};
+
 ```
 
 #### Partials
 
-Views associated to templateUrl should be placed in **app/partials/**
+Views associated to templateUrl should be placed in **src/components/<component>/partials/**
 
-HTML files in this folder are dynamically injected in the following file (**app/scripts/modules/templates/module.js**).
+HTML files in this folder are dynamically injected in the following file (**src/templates.js**).
 
 ## Application structure
 
 ```console
 .
+├── CHANGELOG.md
+├── GETTING-STARTED.md
 ├── README.md
 ├── bower.json
-├── Gulpfile.js
+├── gulpfile.babel.js
 ├── package.json
+├── config          // Environment configuration files
 ├── src             // Where you code
-│   ├── app         // Javascript files
-│   ├── config
-│   ├── partials    // AngularJS views
-│   ├── styles
-│   │   └── images  // Images files
+│   ├── assets      // Javascript files
+│   ├── components  // AngularJS components
+│   ├── shared      // AngularJS shared elements
+│   ├── app.js      // Application entry point
+│   ├── vendor.js   // Vendor declarations
 │   └── index.html
 └── tasks           // Gulp tasks
 ```
 
-### Explanation app/scripts
+### Explanation src/components
 
 ```console
 .
-├── modules         // All application modules
-│   ├── common      // Transversal Services
-│   ├── data        // Data Access Services
-│   ├── templates   // Generated Views
-│   └── ui          // UI Layer (Controllers, Directives, Filters, ...)
-└── app.js
+└── <component>
+    ├── partials   // Component templates
+    ├── styles     // Component style
+    ├── index.js   // Module declaration
+    └── router.js  // Component routing declaration
 ```
 
-> Module example
+> Component Module example
 
 ```js
 'use strict';
 
-module.exports = angular
-  .module('<%= appname %>.ui', [
-    'ui.router',
-    '<%= appname %>.common'
-    '<%= appname %>.data',
-    '<%= appname %>.templates'
+// ES6 Import of controller declaration
+import ListController from './list-controller';
+
+// ES6 Import of routing declaration
+import router from './router';
+
+export default angular
+  .module('<%= appname %>.components.list', [
+    'ui.router'
   ])
-  .controller('WelcomeController', require('./controllers/welcome'))
+
+  .controller('List', ListController)
+
+  .config(router)
 ;
 ```
 
@@ -182,3 +178,26 @@ module.exports = angular
 
 - data-ng-app: Set entry point module to "application.ui
 - data-ng-strict-di: Set dependency injection in strict mode
+
+## Add dependency using bower
+
+> Example with angular-bootstrap
+
+- **--save** add dependency in  bower.json
+- **--force-latest** force resolution to the latest version
+
+```console
+bower install angular-bootstrap --save --force-latest
+```
+
+Include dependency in **src/vendor.js**
+
+```js
+'use strict';
+
+// Require vendors
+require('../vendor/angular/angular');
+require('../vendor/angular-ui-router/release/angular-ui-router');
+// Your new dependency
+require('../vendor/angular-bootstrap/ui-bootstrap-tpls');
+```
