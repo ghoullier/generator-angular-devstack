@@ -1,3 +1,5 @@
+'use strict';
+
 import { name as list} from './list';
 import { name as home} from './home';
 

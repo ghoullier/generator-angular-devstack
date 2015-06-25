@@ -2,7 +2,7 @@
   "src": [
     "partials/component.html",
 
-    "styles/component.scss"
+    "styles/main.scss"
   ],
   "templated": [
     "component-controller.js",

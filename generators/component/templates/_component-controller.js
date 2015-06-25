@@ -1,12 +1,9 @@
 'use strict';
 
-function <%= controller %>() {
-  'ngInject';
+export default class <%= controller %>Controller {
+  constructor() {
+    'ngInject';
 
-  // ViewModel
-  var vm = this;
-
-  vm.welcomeMessage = 'Message de bienvenue affiché par Angular JS';
+    // TODO
+  }
 }
-
-module.exports = <%= controller %>;

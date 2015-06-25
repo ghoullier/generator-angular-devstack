@@ -1,11 +1,15 @@
 'use strict';
 
-module.exports = angular
-  .module('<%= appname %>.components.<%= component.name %>', [
+import <%= controller %>Controller from './<%= component %>-controller';
+
+import router from './router';
+
+export default angular
+  .module('<%= appname %>.components.<%= component %>', [
     'ui.router'
   ])
 
-  .controller('<%= controller.name %>', require('./<%= component.name %>-controller'))
+  .controller('<%= controller %>', <%= controller %>Controller)
 
-  .config(require('./router'))
+  .config(router)
 ;

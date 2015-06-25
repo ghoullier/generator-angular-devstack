@@ -1,3 +1,5 @@
+'use strict';
+
 import ListController from './list-controller';
 
 import router from './router';

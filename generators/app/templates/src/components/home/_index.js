@@ -1,3 +1,5 @@
+'use strict';
+
 import HomeController from './home-controller';
 
 import router from './router';

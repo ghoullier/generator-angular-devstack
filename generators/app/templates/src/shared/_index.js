@@ -1,3 +1,5 @@
+'use strict';
+
 import { version as AppVersion } from '../../package';
 
 import EventsEmitter from './services/events-emitter';

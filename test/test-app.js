@@ -15,7 +15,9 @@ describe('angular-devstack:app', function () {
       .withOptions({
         skipInstall: true
       })
-      .withPrompts({})
+      .withPrompts({
+        appname: 'devstack-test'
+      })
       .on('end', done);
   });
 
