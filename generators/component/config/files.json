@@ -1,0 +1,12 @@
+{
+  "src": [
+    "styles/main.scss"
+  ],
+  "templated": [
+    "component-controller.js",
+    "index.js",
+    "router.js",
+
+    "partials/component.html"
+  ]
+}

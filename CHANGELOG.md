@@ -2,6 +2,17 @@
 
 ---
 
+## 2.0.0 (2015-06-24)
+
+> This version is no longer compatible with 1.x
+
+#### Features
+
+- All new projet structure
+- ES2015 support
+- New watcher implementation
+- Update npm dependencies
+
 ## 1.4.0 (2015-03-20)
 
 #### Fix

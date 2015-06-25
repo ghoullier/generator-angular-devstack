@@ -19,7 +19,6 @@
   "trailing": true,
   "smarttabs": true,
   "predef": [
-    "angular",
     "before",
     "describe",
     "it"

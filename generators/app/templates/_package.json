@@ -1,0 +1,61 @@
+{
+  "name": "<%= appname %>",
+  "description": "<%= appname %> generated with yeoman-angular-devstack",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install",
+    "postupdate": "bower update",
+
+    "prestart": "npm install",
+    "start": "gulp develop --env=dev",
+
+    "prebuild": "npm install",
+    "build": "gulp build --env=prod --optimize",
+
+    "prearchive": "npm run build",
+    "archive": "gulp archive"
+  },
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "babelify": "^6.1.2",
+    "bower": "^1.4.1",
+    "browser-sync": "^2.7.11",
+    "browserify": "^10.2.4",
+    "browserify-ngannotate": "^1.0.1",
+    "compression": "^1.5.0",
+    "del": "^1.2.0",
+    "flightplan": "^0.6.3",
+    "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-gh-pages": "^0.5.2",
+    "gulp-gzip": "^1.1.0",
+    "gulp-htmlmin": "^1.1.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tar": "^1.4.0",
+    "gulp-template": "^3.0.0",
+    "gulp-util": "^3.0.5",
+    "merge": "^1.2.0",
+    "merge-stream": "^0.1.7",
+    "minifyify": "^7.0.1",
+    "minimist": "^1.1.1",
+    "pretty-hrtime": "^1.0.0",
+    "run-sequence": "^1.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,90 @@
+{
+  "src": [
+    "CHANGELOG.md",
+    "GETTING-STARTED.md",
+    "STYLEGUIDE.md",
+
+    "config/config-dev.json",
+    "config/config-prod.json",
+
+    "src/vendor.js",
+
+    "src/components/router.js",
+
+    "src/components/home/router.js",
+    "src/components/home/home-controller.js",
+    "src/components/home/partials/home.html",
+    "src/components/home/styles/main.scss",
+    "src/components/home/styles/_home.scss",
+
+    "src/components/list/router.js",
+    "src/components/list/list-controller.js",
+    "src/components/list/partials/list.html",
+    "src/components/list/styles/main.scss",
+    "src/components/list/styles/_list.scss",
+
+    "src/shared/config/compiler.js",
+    "src/shared/config/logger.js",
+    "src/shared/services/events-emitter.js",
+    "src/shared/services/faker.js",
+    "src/shared/services/logger.js",
+    "src/shared/styles/main.scss",
+    "src/shared/styles/partials/_all.scss",
+    "src/shared/styles/partials/_colors.scss",
+    "src/shared/styles/partials/_mixins.scss",
+    "src/shared/styles/partials/_reset.scss"
+  ],
+  "tasks": [
+    "gulpfile.babel.js",
+
+    "tasks/archive.js",
+    "tasks/build.js",
+    "tasks/clean.js",
+    "tasks/config.js",
+    "tasks/develop.js",
+    "tasks/fonts.js",
+    "tasks/html.js",
+    "tasks/images.js",
+    "tasks/lint.js",
+    "tasks/publish.js",
+    "tasks/scripts.js",
+    "tasks/styles.js",
+    "tasks/watch.js",
+
+    "tasks/utils/bundler.js",
+    "tasks/utils/cli-args.js",
+    "tasks/utils/config.js",
+    "tasks/utils/handlers.js",
+    "tasks/utils/paths.js",
+    "tasks/utils/string.js",
+    "tasks/utils/templated-variables.js",
+    "tasks/utils/watcher.js"
+  ],
+  "templated": [
+    "bower.json",
+    "package.json",
+    "README.md",
+
+    "src/index.html",
+    "src/app.js",
+    "src/config.js",
+
+    "src/components/index.js",
+    "src/components/home/index.js",
+    "src/components/list/index.js",
+
+    "src/shared/index.js",
+
+    "tasks/templates.js"
+  ],
+  "dots": [
+    ".gitignore",
+    ".editorconfig",
+    ".jshintrc",
+    ".bowerrc",
+
+    "src/.gitignore",
+    "src/assets/fonts/.gitkeep",
+    "src/assets/images/.gitkeep"
+  ]
+}
