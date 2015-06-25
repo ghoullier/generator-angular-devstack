@@ -7,6 +7,6 @@
     "index.js",
     "router.js",
 
-    "partials/component.html",
+    "partials/component.html"
   ]
 }
