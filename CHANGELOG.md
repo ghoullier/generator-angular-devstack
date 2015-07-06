@@ -2,6 +2,16 @@
 
 ---
 
+## 2.0.1 (2015-07-06)
+
+#### Improvements
+
+- Update npm dependencies
+
+# Fix
+
+- Use babel-core instead of babel
+
 ## 2.0.0 (2015-06-24)
 
 > This version is no longer compatible with 1.x
