@@ -19,7 +19,7 @@ const config = string.compile(paths.sources.config, {
 
 export function task(callback) {
   sequence(
-    ['watch.assets', 'watch.app', 'watch.vendor'],
+    ['watch.assets', 'watch.app'],
     callback
   );
 }
@@ -49,6 +49,10 @@ export function assets() {
   gulp.watch([config], [
     'config'
   ]);
+  // Watch bower
+  gulp.watch([sources.bower], [
+    'scripts.vendor'
+  ]);
   // Watch for live reload
   gulp.watch([
     dist.root + '*.html',
@@ -62,8 +66,3 @@ export function app() {
   // Watch app
   return watcher.app();
 };
-
-export function vendor() {
-  // Watch vendor
-  return watcher.vendor();
-}

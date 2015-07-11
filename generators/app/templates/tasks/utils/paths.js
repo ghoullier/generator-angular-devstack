@@ -1,6 +1,7 @@
 export default {
   sources: {
     root: './src/',
+    bower: './bower.json',
     config: './config/config-{{env}}.json',
     entries: {
       app: './src/app.js',
