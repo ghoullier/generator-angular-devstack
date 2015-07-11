@@ -123,7 +123,7 @@ HTML files in this folder are dynamically injected in the following file (**src/
 ├── CHANGELOG.md
 ├── GETTING-STARTED.md
 ├── README.md
-├── bower.json
+├── bower.json      // Vendor declarations
 ├── gulpfile.babel.js
 ├── package.json
 ├── config          // Environment configuration files
@@ -132,7 +132,6 @@ HTML files in this folder are dynamically injected in the following file (**src/
 │   ├── components  // AngularJS components
 │   ├── shared      // AngularJS shared elements
 │   ├── app.js      // Application entry point
-│   ├── vendor.js   // Vendor declarations
 │   └── index.html
 └── tasks           // Gulp tasks
 ```
@@ -190,14 +189,4 @@ export default angular
 bower install angular-bootstrap --save --force-latest
 ```
 
-Include dependency in **src/vendor.js**
-
-```js
-'use strict';
-
-// Require vendors
-require('../vendor/angular/angular');
-require('../vendor/angular-ui-router/release/angular-ui-router');
-// Your new dependency
-require('../vendor/angular-bootstrap/ui-bootstrap-tpls');
-```
+Dependency automaticly added in **vendor.js** via main-bower-files

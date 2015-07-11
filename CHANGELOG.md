@@ -2,6 +2,12 @@
 
 ---
 
+## 2.1.0 (2015-07-11)
+
+#### Features
+
+- vendor.js file replaced by main bower files. Better support of non CommonJS modules.
+
 ## 2.0.1 (2015-07-06)
 
 #### Improvements

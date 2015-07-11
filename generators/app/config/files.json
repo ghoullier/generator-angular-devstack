@@ -7,8 +7,6 @@
     "config/config-dev.json",
     "config/config-prod.json",
 
-    "src/vendor.js",
-
     "src/components/router.js",
 
     "src/components/home/router.js",
