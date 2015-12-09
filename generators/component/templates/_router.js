@@ -1,7 +1,5 @@
-'use strict';
-
 export default ($stateProvider) => {
-  'ngInject';
+  'ngInject'
 
   // Declare routes
   $stateProvider
@@ -10,5 +8,5 @@ export default ($stateProvider) => {
       templateUrl: 'components/<%= component %>/partials/<%= component %>.html',
       controller: '<%= controller %> as vm'
     })
-  ;
-};
+  
+}

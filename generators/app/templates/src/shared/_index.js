@@ -1,13 +1,11 @@
-'use strict';
+import { version as AppVersion } from '../../package'
 
-import { version as AppVersion } from '../../package';
+import EventsEmitter from './services/events-emitter'
+import Faker from './services/faker'
+import Logger from './services/logger'
 
-import EventsEmitter from './services/events-emitter';
-import Faker from './services/faker';
-import Logger from './services/logger';
-
-import compiler from './config/compiler';
-import logger from './config/logger';
+import compiler from './config/compiler'
+import logger from './config/logger'
 
 export default angular
   .module('<%= appname %>.shared', [
@@ -22,4 +20,3 @@ export default angular
 
   .config(compiler)
   .config(logger)
-;

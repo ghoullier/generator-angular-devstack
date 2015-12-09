@@ -1,7 +1,5 @@
-'use strict';
-
 export default (AppConfig, LoggerProvider) => {
-  'ngInject';
+  'ngInject'
 
-  LoggerProvider.setLogLevel(AppConfig.LOG_LEVEL);
-};
+  LoggerProvider.setLogLevel(AppConfig.LOG_LEVEL)
+}

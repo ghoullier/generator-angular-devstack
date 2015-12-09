@@ -1,5 +1,6 @@
 {
   "node": true,
+  "asi": true,
   "browser": true,
   "esnext": true,
   "bitwise": true,
@@ -15,7 +16,7 @@
   "regexp": true,
   "undef": true,
   "unused": true,
-  "strict": true,
+  "strict": false,
   "trailing": true,
   "smarttabs": true,
   "predef": [

@@ -1,9 +1,7 @@
-'use strict';
-
 export default class ListController {
   constructor(Faker) {
-    'ngInject';
+    'ngInject'
 
-    this.items = Faker.getItems();
+    this.items = Faker.getItems()
   }
 }

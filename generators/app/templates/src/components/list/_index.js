@@ -1,8 +1,6 @@
-'use strict';
+import ListController from './list-controller'
 
-import ListController from './list-controller';
-
-import router from './router';
+import router from './router'
 
 export default angular
   .module('<%= appname %>.components.list', [
@@ -12,4 +10,3 @@ export default angular
   .controller('List', ListController)
 
   .config(router)
-;
