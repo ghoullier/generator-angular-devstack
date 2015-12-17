@@ -81,6 +81,7 @@
     ".editorconfig",
     ".jshintrc",
     ".bowerrc",
+    ".nvmrc",
 
     "src/.gitignore",
     "src/assets/fonts/.gitkeep",
