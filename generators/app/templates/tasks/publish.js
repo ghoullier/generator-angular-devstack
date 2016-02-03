@@ -12,5 +12,4 @@ export default () => {
       branch : 'gh-pages',
       cacheDir : __dirname + '/../.publish/'
     }))
-  
 }

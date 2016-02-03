@@ -38,5 +38,4 @@ export default () => {
     .pipe(browserSync.reload({
       stream: true
     }))
-  
 }

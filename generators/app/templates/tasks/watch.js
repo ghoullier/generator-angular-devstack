@@ -15,14 +15,14 @@ const config = compile(sources.config, {
   env: env
 })
 
-export function task(callback) {
+export const task = (callback) => {
   sequence(
     ['watch.assets', 'watch.app'],
     callback
   )
 }
 
-export function assets() {
+export const assets = () => {
   // Watch all application scripts
   gulp.watch([sources.scripts], [
     'lint'
@@ -60,7 +60,7 @@ export function assets() {
   ]).on('change', reload)
 }
 
-export function app() {
+export const app = () => {
   // Watch app
   return watcher.app()
 }

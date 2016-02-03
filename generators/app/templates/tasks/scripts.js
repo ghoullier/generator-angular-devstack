@@ -14,16 +14,15 @@ import args from './utils/cli-args'
 
 const { optimize } = args
 
-export function app() {
+export const app = () => {
   return bundler.app().bundle()
     .on('error', onBrowserifyError)
     .pipe(stream('app.js'))
     .pipe(buffer())
     .pipe(gulp.dest(paths.dist.scripts))
-
 }
 
-export function vendor() {
+export const vendor = () => {
   return gulp.src(files({
       filter: /^(.)*(\.js)$/
     }))
@@ -32,5 +31,4 @@ export function vendor() {
     .pipe(optimize ? uglify() : util.noop())
     .pipe(optimize ? util.noop() : sourcemaps.write())
     .pipe(gulp.dest(paths.dist.scripts))
-
 }
