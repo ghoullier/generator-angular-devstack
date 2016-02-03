@@ -2,6 +2,12 @@
 
 ---
 
+## 2.2.2 (2016-02-03)
+
+#### Fix
+
+- Add missing npm dependencies
+
 ## 2.2.1 (2016-02-03)
 
 #### Features
