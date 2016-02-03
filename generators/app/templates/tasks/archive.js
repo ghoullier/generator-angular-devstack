@@ -15,5 +15,4 @@ export default () => {
     .pipe(tar(archive + '.tar'))
     .pipe(gzip())
     .pipe(gulp.dest('.'))
-  
 }
