@@ -2,6 +2,13 @@
 
 ---
 
+## 2.2.1 (2016-02-03)
+
+#### Features
+
+- Support yo 0.22
+- Update npm dependencies
+
 ## 2.2.0 (2016-02-03)
 
 #### Features
