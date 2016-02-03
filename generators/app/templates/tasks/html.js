@@ -1,13 +1,13 @@
-import gulp from 'gulp';
-import htmlmin from 'gulp-htmlmin';
-import plumber from 'gulp-plumber';
-import template from 'gulp-template';
+import gulp from 'gulp'
+import htmlmin from 'gulp-htmlmin'
+import plumber from 'gulp-plumber'
+import template from 'gulp-template'
 
-import templated from './utils/templated-variables';
-import paths from './utils/paths';
-import { onGenericError } from './utils/handlers';
+import templated from './utils/templated-variables'
+import paths from './utils/paths'
+import { onGenericError } from './utils/handlers'
 
-const entries = paths.sources.entries;
+const entries = paths.sources.entries
 
 export default () => {
   // Get our index.html
@@ -24,5 +24,5 @@ export default () => {
     }))
     // And put it in the dist folder
     .pipe(gulp.dest(paths.dist.root))
-  ;
-};
+  
+}

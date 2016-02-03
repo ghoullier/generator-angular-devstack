@@ -1,9 +1,9 @@
-import gulp from 'gulp';
-import ghPages from 'gulp-gh-pages';
+import gulp from 'gulp'
+import ghPages from 'gulp-gh-pages'
 
-import pkg from '../package';
+import pkg from '../package'
 
-import paths from './utils/paths';
+import paths from './utils/paths'
 
 export default () => {
   return gulp.src([paths.dist.root + '**/*.*'])
@@ -12,5 +12,5 @@ export default () => {
       branch : 'gh-pages',
       cacheDir : __dirname + '/../.publish/'
     }))
-  ;
-};
+  
+}

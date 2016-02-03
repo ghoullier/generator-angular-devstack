@@ -1,18 +1,18 @@
-import gulp from 'gulp';
-import util from 'gulp-util';
-import sass from 'gulp-sass';
-import autoprefixer from 'gulp-autoprefixer';
-import plumber from 'gulp-plumber';
-import sourcemaps from 'gulp-sourcemaps';
-import concat from 'gulp-concat-css';
-import browserSync from 'browser-sync';
+import gulp from 'gulp'
+import util from 'gulp-util'
+import sass from 'gulp-sass'
+import autoprefixer from 'gulp-autoprefixer'
+import plumber from 'gulp-plumber'
+import sourcemaps from 'gulp-sourcemaps'
+import concat from 'gulp-concat-css'
+import browserSync from 'browser-sync'
 
-import args from './utils/cli-args';
-import paths from './utils/paths';
-import { onGenericError } from './utils/handlers';
+import args from './utils/cli-args'
+import paths from './utils/paths'
+import { onGenericError } from './utils/handlers'
 
 export default () => {
-  const optimize = args.optimize;
+  const optimize = args.optimize
   return gulp.src(paths.sources.styles)
     // Catch errors
     .pipe(plumber({
@@ -38,5 +38,5 @@ export default () => {
     .pipe(browserSync.reload({
       stream: true
     }))
-  ;
-};
+  
+}

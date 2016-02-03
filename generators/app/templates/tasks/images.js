@@ -1,14 +1,14 @@
-import gulp from 'gulp';
-import imagemin from 'gulp-imagemin';
-import plumber from 'gulp-plumber';
-import util from 'gulp-util';
+import gulp from 'gulp'
+import imagemin from 'gulp-imagemin'
+import plumber from 'gulp-plumber'
+import util from 'gulp-util'
 
-import args from './utils/cli-args';
-import paths from './utils/paths';
-import { onGenericError } from './utils/handlers';
+import args from './utils/cli-args'
+import paths from './utils/paths'
+import { onGenericError } from './utils/handlers'
 
 export default () => {
-  var optimize = args.optimize;
+  const { optimize } = args
   return gulp.src(paths.sources.images)
     // Catch errors
     .pipe(plumber({
@@ -21,5 +21,5 @@ export default () => {
       svgoPlugins: [{removeViewBox: false}]
     }) : util.noop())
     .pipe(gulp.dest(paths.dist.images))
-  ;
-};
+
+}
