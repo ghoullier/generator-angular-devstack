@@ -47,6 +47,8 @@ gulp.task('archive', archive);
 // Publish task
 gulp.task('publish', publish);
 // Watch tasks
-gulp.task('watch.assets', watch.assets);
-gulp.task('watch.app', watch.app);
 gulp.task('watch', ['build'], watch.task);
+// Watch application files
+gulp.task('watch.app', watch.app);
+// Watch assets files
+gulp.task('watch.assets', watch.assets);

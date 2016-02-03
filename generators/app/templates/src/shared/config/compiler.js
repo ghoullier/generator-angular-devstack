@@ -1,7 +1,5 @@
-'use strict';
-
 export default ($compileProvider, AppConfig) => {
-  'ngInject';
+  'ngInject'
 
-  $compileProvider.debugInfoEnabled(AppConfig.NG_DEBUG_INFO_ENABLED);
-};
+  $compileProvider.debugInfoEnabled(AppConfig.NG_DEBUG_INFO_ENABLED)
+}

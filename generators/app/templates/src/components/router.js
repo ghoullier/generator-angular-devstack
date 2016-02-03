@@ -1,10 +1,8 @@
-'use strict';
-
 export default ($urlRouterProvider, $locationProvider) => {
-  'ngInject';
+  'ngInject'
 
   // Default route
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/')
   // Configure html5
-  $locationProvider.html5Mode(true);
-};
+  $locationProvider.html5Mode(true)
+}

@@ -1,8 +1,6 @@
-'use strict';
+import HomeController from './home-controller'
 
-import HomeController from './home-controller';
-
-import router from './router';
+import router from './router'
 
 export default angular
   .module('<%= appname %>.components.home', [
@@ -12,4 +10,3 @@ export default angular
   .controller('Home', HomeController)
 
   .config(router)
-;

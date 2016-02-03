@@ -76,10 +76,12 @@
     "tasks/templates.js"
   ],
   "dots": [
+    ".babelrc",
     ".gitignore",
     ".editorconfig",
-    ".jshintrc",
+    ".eslintrc",
     ".bowerrc",
+    ".nvmrc",
 
     "src/.gitignore",
     "src/assets/fonts/.gitkeep",
