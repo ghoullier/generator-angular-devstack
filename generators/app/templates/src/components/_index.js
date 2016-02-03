@@ -1,5 +1,3 @@
-'use strict';
-
 import list from './list'
 import home from './home'
 
