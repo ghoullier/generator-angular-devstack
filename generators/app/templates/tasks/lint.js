@@ -1,9 +1,9 @@
-import gulp from 'gulp';
-import jshint from 'gulp-jshint';
-import plumber from 'gulp-plumber';
+import gulp from 'gulp'
+import eslint from 'gulp-eslint'
+import plumber from 'gulp-plumber'
 
-import paths from './utils/paths';
-import { onGenericError } from './utils/handlers';
+import paths from './utils/paths'
+import { onGenericError } from './utils/handlers'
 
 export default () => {
   return gulp.src(paths.sources.scripts)
@@ -11,7 +11,6 @@ export default () => {
     .pipe(plumber({
       errorHandler: onGenericError
     }))
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-  ;
-};
+    .pipe(eslint())
+    .pipe(eslint.format())
+}

@@ -79,7 +79,7 @@
     ".babelrc",
     ".gitignore",
     ".editorconfig",
-    ".jshintrc",
+    ".eslintrc",
     ".bowerrc",
     ".nvmrc",
 
