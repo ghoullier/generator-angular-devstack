@@ -2,6 +2,12 @@
 
 ---
 
+## 2.2.0 (2016-02-03)
+
+#### Features
+
+- Replace jshint by eslint
+
 ## 2.1.0 (2015-07-11)
 
 #### Features
