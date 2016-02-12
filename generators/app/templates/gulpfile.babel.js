@@ -43,7 +43,11 @@ gulp.task('scripts.vendor', scripts.vendor)
 // Views task
 gulp.task('html', html)
 // Fonts task
-gulp.task('fonts', fonts)
+gulp.task('fonts', ['fonts.app', 'fonts.vendor'])
+// Fonts app task
+gulp.task('fonts.app', fonts.app)
+// Fonts vendor task
+gulp.task('fonts.vendor', fonts.vendor)
 // Images task
 gulp.task('images', images)
 // Package task
