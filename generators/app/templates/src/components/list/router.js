@@ -1,4 +1,4 @@
-export default ($stateProvider) => {
+export default ($stateProvider, AuthenticatedNavProvider) => {
   'ngInject'
 
   // Declare routes
@@ -11,5 +11,8 @@ export default ($stateProvider) => {
         }
       }
     })
-
+  AuthenticatedNavProvider.add({
+    sref: 'authenticated.list',
+    text: 'List'
+  })
 }

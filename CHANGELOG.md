@@ -2,6 +2,13 @@
 
 ---
 
+## 2.3.1 (2016-02-19)
+
+#### Features
+
+- Add navigation provider
+- Better view experience login/app/logout
+
 ## 2.3.0 (2016-02-19)
 
 #### Features

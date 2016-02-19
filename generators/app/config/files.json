@@ -10,6 +10,8 @@
     "src/components/router.js",
 
     "src/components/layout/router.js",
+    "src/components/layout/components/authenticated-nav.js",
+    "src/components/layout/services/authenticated-nav.js",
     "src/components/layout/styles/main.scss",
     "src/components/layout/styles/_layout.scss",
 
@@ -79,9 +81,11 @@
 
     "src/components/index.js",
     "src/components/layout/index.js",
+    "src/components/layout/partials/authenticated-nav.html",
     "src/components/login/index.js",
     "src/components/home/index.js",
     "src/components/list/index.js",
+
 
     "src/shared/index.js",
 

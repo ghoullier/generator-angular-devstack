@@ -6,5 +6,5 @@ export default angular
   .module('<%= appname %>.components.login', [
     'ui.router'
   ])
-  .component('viewLogin', ViewLogin)
   .config(router)
+  .component('viewLogin', ViewLogin)

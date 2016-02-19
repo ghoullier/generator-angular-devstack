@@ -1,5 +1,7 @@
-export default ($stateProvider) => {
+export default ($urlRouterProvider, $stateProvider) => {
   'ngInject'
+
+  $urlRouterProvider.when(/^\/app\/logout/, '/login')
 
   // Declare routes
   $stateProvider
@@ -16,7 +18,10 @@ export default ($stateProvider) => {
       url: '/app',
       views: {
         layout: {
-          template: '<section ui-view="view" class="ViewContainer ViewContainer--Authenticated"></section>'
+          template: `
+            <authenticated-nav></authenticated-nav>
+            <section ui-view="view" class="ViewContainer ViewContainer--Authenticated"></section>
+          `
         }
       }
     })

@@ -6,5 +6,5 @@ export default angular
   .module('<%= appname %>.components.list', [
     'ui.router'
   ])
-  .component('viewlist', ViewList)
   .config(router)
+  .component('viewList', ViewList)
