@@ -11,5 +11,8 @@ export default ($stateProvider) => {
         }
       }
     })
+    .state('authenticated.logout', {
+      url: '/logout'
+    })
 
 }

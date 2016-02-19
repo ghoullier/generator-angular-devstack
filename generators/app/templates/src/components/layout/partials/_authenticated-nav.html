@@ -1,0 +1,15 @@
+<nav role="navigation" class="navbar navbar-default navbar-static-top">
+  <div class="navbar-header">
+    <span class="navbar-brand"><%= appname %></span>
+  </div>
+  <ul class="nav navbar-nav navbar-top-links">
+    <li ng-repeat="link in $ctrl.links" ui-sref-active="active">
+      <a ui-sref="{{link.sref}}">{{link.text}}</a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-top-links navbar-right">
+    <li>
+      <a ui-sref="authenticated.logout">Logout</a>
+    </li>
+  </ul>
+</nav>

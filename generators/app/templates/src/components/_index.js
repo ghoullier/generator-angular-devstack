@@ -12,5 +12,4 @@ export default angular
     home.name,
     list.name
   ])
-
   .config(router)
