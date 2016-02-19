@@ -4,24 +4,26 @@ import url from 'url'
 
 import paths from './utils/paths'
 
-export default () => {
-  browserSync({
-    server: {
-      baseDir: paths.dist.root,
-      middleware: pushStateMiddleware
-    }
-  })
-}
+const { dist: { root } } = paths
 
 /**
  * Middelware that support pushState
  */
-function pushStateMiddleware(request, response, next) {
-  var pathname = paths.dist.root + url.parse(request.url).pathname
-  fs.exists(pathname, function onExists(exists) {
+const pushStateMiddleware = (request, response, next) => {
+  const pathname = root + url.parse(request.url).pathname
+  fs.exists(pathname, (exists) => {
     if (!exists) {
       request.url = '/index.html'
     }
     return next()
+  })
+}
+
+export default () => {
+  browserSync({
+    server: {
+      baseDir: root,
+      middleware: pushStateMiddleware
+    }
   })
 }

@@ -1,7 +1,7 @@
 import util from 'gulp-util'
 
-function onGenericError(error) {
-  var message = JSON.stringify({
+export const onGenericError = (error) => {
+  const message = JSON.stringify({
     file: error.file,
     line: error.line,
     message: error.message
@@ -11,8 +11,8 @@ function onGenericError(error) {
   util.log(util.colors.red(message))
 }
 
-function onBrowserifyError(error) {
-  var message = JSON.stringify({
+export const onBrowserifyError = (error) => {
+  const message = JSON.stringify({
     filename: error.filename,
     message: error.message
   })
@@ -20,5 +20,3 @@ function onBrowserifyError(error) {
   util.beep()
   util.log(util.colors.red(message))
 }
-
-export { onBrowserifyError, onGenericError }

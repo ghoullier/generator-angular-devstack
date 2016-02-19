@@ -10,6 +10,6 @@ const configPath = compile(paths.sources.config, {
 })
 
 export default function() {
-  var config = fs.readFileSync(configPath, 'utf8')
+  const config = fs.readFileSync(configPath, 'utf8')
   return JSON.parse(config)
 }

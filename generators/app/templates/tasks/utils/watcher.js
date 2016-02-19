@@ -14,16 +14,16 @@ function log(task, step, message = '', duration = '') {
 }
 
 function watch(bundle, task) {
-  var watcher = watchify(bundle)
-  function rebundle() {
-    var start = process.hrtime()
+  const watcher = watchify(bundle)
+  const rebundle = () => {
+    const start = process.hrtime()
     log(task, 'Starting')
     return watcher.bundle()
       .on('error', onBrowserifyError)
       .pipe(stream(`${task}.js`))
       .pipe(gulp.dest(paths.dist.scripts))
       .on('end', function() {
-        var end = process.hrtime(start)
+        const end = process.hrtime(start)
         log(task, 'Finished', 'after', hrtime(end))
       })
       .pipe(browserSync.reload({stream: true, once: true}))
@@ -32,12 +32,10 @@ function watch(bundle, task) {
   return rebundle()
 }
 
-function app() {
+export const app = () => {
   return watch(bundler.app(), 'app')
 }
 
-function vendor() {
+export const vendor = () => {
   return watch(bundler.vendor(), 'vendor')
 }
-
-export { app, vendor }
