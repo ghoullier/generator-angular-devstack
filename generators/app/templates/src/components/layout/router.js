@@ -7,16 +7,16 @@ export default ($stateProvider) => {
       abstract: true,
       views: {
         layout: {
-          template: `<section ui-view="view" class="ViewContainer ViewContainer--Anonymous"></section>`
+          template: '<section ui-view="view" class="ViewContainer ViewContainer--Anonymous"></section>'
         }
       }
     })
     .state('authenticated', {
       abstract: true,
-      url: '/admin',
+      url: '/app',
       views: {
         layout: {
-          template: `<section ui-view="view" class="ViewContainer ViewContainer--Authenticated"></section>`
+          template: '<section ui-view="view" class="ViewContainer ViewContainer--Authenticated"></section>'
         }
       }
     })
