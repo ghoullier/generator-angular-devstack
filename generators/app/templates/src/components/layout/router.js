@@ -9,7 +9,7 @@ export default ($urlRouterProvider, $stateProvider) => {
       abstract: true,
       views: {
         layout: {
-          template: '<section ui-view="view" class="ViewContainer ViewContainer--Anonymous"></section>'
+          template: '<view-container context="Anonymous"></view-container>'
         }
       }
     })
@@ -20,7 +20,7 @@ export default ($urlRouterProvider, $stateProvider) => {
         layout: {
           template: `
             <authenticated-nav></authenticated-nav>
-            <section ui-view="view" class="ViewContainer ViewContainer--Authenticated"></section>
+            <view-container context="Authenticated"></view-container>
           `
         }
       }

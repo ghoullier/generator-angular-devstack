@@ -11,6 +11,8 @@
 
     "src/components/layout/router.js",
     "src/components/layout/components/authenticated-nav.js",
+    "src/components/layout/components/view-container.js",
+    "src/components/layout/partials/view-container.html",
     "src/components/layout/services/authenticated-nav.js",
     "src/components/layout/styles/main.scss",
     "src/components/layout/styles/_layout.scss",
