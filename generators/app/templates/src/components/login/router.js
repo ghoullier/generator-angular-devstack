@@ -3,11 +3,11 @@ export default ($stateProvider) => {
 
   // Declare routes
   $stateProvider
-    .state('authenticated.home', {
-      url: '/home',
+    .state('anonymous.login', {
+      url: '/login',
       views: {
         view: {
-          template: '<view-home></view-home>'
+          template: '<view-login></view-login>'
         }
       }
     })

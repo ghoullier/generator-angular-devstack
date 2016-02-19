@@ -3,10 +3,13 @@ export default ($stateProvider) => {
 
   // Declare routes
   $stateProvider
-    .state('list', {
+    .state('authenticated.list', {
       url: '/list',
-      templateUrl: 'components/list/partials/list.html',
-      controller: 'List as vm'
+      views: {
+        view: {
+          template: '<view-list></view-list>'
+        }
+      }
     })
-  
+
 }
