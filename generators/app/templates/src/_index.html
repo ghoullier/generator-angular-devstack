@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="<%- BASE_HREF %>css/main.css?v=<%- APP_VERSION %>" />
   </head>
   <body>
-    <div class="Wrapper">
-      <nav class="Nav">
-        <a data-ui-sref="home()" class="Nav__Link">Home</a>
-        <a data-ui-sref="list()" class="Nav__Link">List</a>
-      </nav>
-      <main data-ui-view></main>
-    </div>
+    <main ui-view="layout" class="Layout"></main>
     <script src="<%- BASE_HREF %>js/vendor.js?v=<%- APP_VERSION %>"></script>
     <script src="<%- BASE_HREF %>js/app.js?v=<%- APP_VERSION %>"></script>
     <script src="<%- BASE_HREF %>js/config.js?v=<%- APP_VERSION %>"></script>

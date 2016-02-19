@@ -1,14 +1,14 @@
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import cache from 'gulp-angular-templatecache';
-import htmlmin from 'gulp-htmlmin';
-import template from 'gulp-template';
+import gulp from 'gulp'
+import plumber from 'gulp-plumber'
+import cache from 'gulp-angular-templatecache'
+import htmlmin from 'gulp-htmlmin'
+import template from 'gulp-template'
 
-import templated from './utils/templated-variables';
-import { onGenericError } from './utils/handlers';
-import paths from './utils/paths';
+import templated from './utils/templated-variables'
+import { onGenericError } from './utils/handlers'
+import paths from './utils/paths'
 
-export default function () {
+export default () => {
   return gulp.src(paths.sources.partials)
     // Catch errors
     .pipe(plumber({
@@ -28,5 +28,4 @@ export default function () {
       standalone: true
     }))
     .pipe(gulp.dest(paths.sources.root))
-  ;
-};
+}

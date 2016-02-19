@@ -9,17 +9,27 @@
 
     "src/components/router.js",
 
+    "src/components/layout/router.js",
+    "src/components/layout/styles/main.scss",
+    "src/components/layout/styles/_layout.scss",
+
     "src/components/home/router.js",
-    "src/components/home/home-controller.js",
-    "src/components/home/partials/home.html",
+    "src/components/home/components/view-home.js",
+    "src/components/home/partials/view-home.html",
     "src/components/home/styles/main.scss",
     "src/components/home/styles/_home.scss",
 
     "src/components/list/router.js",
-    "src/components/list/list-controller.js",
-    "src/components/list/partials/list.html",
+    "src/components/list/components/view-list.js",
+    "src/components/list/partials/view-list.html",
     "src/components/list/styles/main.scss",
     "src/components/list/styles/_list.scss",
+
+    "src/components/login/router.js",
+    "src/components/login/components/view-login.js",
+    "src/components/login/partials/view-login.html",
+    "src/components/login/styles/main.scss",
+    "src/components/login/styles/_login.scss",
 
     "src/shared/config/compiler.js",
     "src/shared/config/logger.js",
@@ -68,6 +78,8 @@
     "src/config.js",
 
     "src/components/index.js",
+    "src/components/layout/index.js",
+    "src/components/login/index.js",
     "src/components/home/index.js",
     "src/components/list/index.js",
 

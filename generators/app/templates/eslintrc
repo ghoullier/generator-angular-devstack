@@ -1,27 +1,7 @@
 {
-  "ecmaFeatures": {
-    "arrowFunctions": 1,
-    "binaryLiterals": 1,
-    "blockBindings": 1,
-    "classes": 1,
-    "defaultParams": 1,
-    "destructuring": 1,
-    "forOf": 1,
-    "generators": 1,
-    "modules": 1,
-    "objectLiteralComputedProperties": 1,
-    "objectLiteralDuplicateProperties": 1,
-    "objectLiteralShorthandMethods": 1,
-    "objectLiteralShorthandProperties": 1,
-    "octalLiterals": 1,
-    "regexUFlag": 1,
-    "regexYFlag": 1,
-    "restParams": 1,
-    "spread": 1,
-    "superInFunctions": 1,
-    "templateStrings": 1,
-    "unicodeCodePointEscapes": 1,
-    "globalReturn": 1
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
   "env": {
     "es6": true,
@@ -32,11 +12,11 @@
     "angular": true
   },
   "rules": {
-    "max-len": [2, 100, 4],
+    "max-len": [2, 125, 4],
     "indent": [2, 2],
     "quotes": [1, "single"],
     "semi": [2, "never"],
-    "space-after-keywords": [2, "always"],
+    "keyword-spacing": [2, {"before": true, "after": true, "overrides": {}}],
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }],
     "space-in-parens": [2, "never"],

@@ -1,12 +1,12 @@
-import browserify from 'browserify';
-import babelify from 'babelify';
-import ngAnnotate from 'browserify-ngannotate';
+import browserify from 'browserify'
+import babelify from 'babelify'
+import ngAnnotate from 'browserify-ngannotate'
 
-import args from './cli-args';
-import paths from './paths';
+import args from './cli-args'
+import paths from './paths'
 
-const entries = paths.sources.entries;
-const optimize = args.optimize;
+const entries = paths.sources.entries
+const optimize = args.optimize
 
 function app() {
   const bundler = browserify({
@@ -19,13 +19,13 @@ function app() {
       add: true,
       single_quotes: true
     }, ngAnnotate)
-  ;
+  
   if (optimize) {
     bundler.plugin('minifyify', {
       map: false
-    });
+    })
   }
-  return bundler;
+  return bundler
 }
 
 function vendor() {
@@ -34,13 +34,13 @@ function vendor() {
     insertGlobals: true,
     debug: !optimize,
     verbose: true
-  });
+  })
   if (optimize) {
     bundler.plugin('minifyify', {
       map: false
-    });
+    })
   }
-  return bundler;
+  return bundler
 }
 
-export { app, vendor };
+export { app, vendor }

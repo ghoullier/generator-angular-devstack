@@ -1,4 +1,4 @@
-import sequence from 'run-sequence';
+import sequence from 'run-sequence'
 
 export default (callback) => {
   sequence(
@@ -7,5 +7,5 @@ export default (callback) => {
     'templates',
     ['images', 'styles', 'fonts', 'html', 'lint', 'scripts'],
     callback
-  );
-};
+  )
+}

@@ -1,3 +1,3 @@
-import minimist from 'minimist';
+import minimist from 'minimist'
 
-export default minimist(process.argv);
+export default minimist(process.argv)

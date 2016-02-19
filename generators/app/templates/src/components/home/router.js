@@ -3,10 +3,13 @@ export default ($stateProvider) => {
 
   // Declare routes
   $stateProvider
-    .state('home', {
-      url: '/',
-      templateUrl: 'components/home/partials/home.html',
-      controller: 'Home as vm'
+    .state('authenticated.home', {
+      url: '/home',
+      views: {
+        view: {
+          template: '<view-home></view-home>'
+        }
+      }
     })
-  
+
 }

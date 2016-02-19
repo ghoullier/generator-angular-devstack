@@ -2,6 +2,20 @@
 
 ---
 
+## 2.3.0 (2016-02-19)
+
+#### Features
+
+- Update npm dependencies
+- Support eslint 2.x
+- Support Angular@1.5 component
+
+## 2.2.2 (2016-02-03)
+
+#### Fix
+
+- Add missing npm dependencies
+
 ## 2.2.1 (2016-02-03)
 
 #### Features

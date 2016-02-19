@@ -3,10 +3,13 @@
     "styles/main.scss"
   ],
   "templated": [
-    "component-controller.js",
+    "components/{{component}}.js",
     "index.js",
     "router.js",
 
-    "partials/component.html"
+    "partials/{{component}}.html"
+  ],
+  "dots": [
+    "services/.gitkeep"
   ]
 }

@@ -1,4 +1,4 @@
-import ListController from './list-controller'
+import { ViewList } from './components/view-list'
 
 import router from './router'
 
@@ -6,7 +6,5 @@ export default angular
   .module('<%= appname %>.components.list', [
     'ui.router'
   ])
-
-  .controller('List', ListController)
-
+  .component('viewlist', ViewList)
   .config(router)

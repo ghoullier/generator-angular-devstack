@@ -22,4 +22,4 @@ export default {
     images: './dist/css/images/',
     fonts: './dist/fonts/'
   }
-};
+}
