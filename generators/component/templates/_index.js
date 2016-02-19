@@ -1,4 +1,4 @@
-import <%= controller %>Controller from './<%= component %>-controller'
+import { <%= controller %> } from './components/<%= component %>'
 
 import router from './router'
 
@@ -6,7 +6,5 @@ export default angular
   .module('<%= appname %>.components.<%= component %>', [
     'ui.router'
   ])
-
-  .controller('<%= controller %>', <%= controller %>Controller)
-
+  .component('<%= component %>', <%= controller %>)
   .config(router)

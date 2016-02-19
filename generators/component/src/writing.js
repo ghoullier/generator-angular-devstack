@@ -6,7 +6,7 @@ var config = require('../config/files');
 
 var DOT = '.';
 var UNDERSCORE = '_';
-var PATTERN = /component/;
+var PATTERN = /\{\{component\}\}/;
 
 module.exports = function () {
 
@@ -34,6 +34,13 @@ module.exports = function () {
     );
   }.bind(this);
 
+  var copyDotFile = function (file) {
+    var basename = path.basename(file);
+    var prefixed = file.replace(basename, basename.substring(1));
+    copyFile(prefixed, file);
+  };
+
   config.src.forEach(copyFile);
   config.templated.forEach(copyTemplatedFile);
+  config.dots.forEach(copyDotFile);
 };
