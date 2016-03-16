@@ -6,10 +6,10 @@ import { compile } from './string'
 
 const env = args.env || 'dev'
 const configPath = compile(paths.sources.config, {
-  env: env
+  env
 })
 
-export default function() {
+export default () => {
   const config = fs.readFileSync(configPath, 'utf8')
   return JSON.parse(config)
 }

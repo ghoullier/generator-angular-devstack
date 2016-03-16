@@ -9,11 +9,11 @@ import * as bundler from './bundler'
 import { onBrowserifyError } from './handlers'
 import paths from './paths'
 
-function log(task, step, message = '', duration = '') {
+const log = (task, step, message = '', duration = '') => {
   util.log(step, util.colors.cyan(`'watchify.${task}'`), message, util.colors.magenta(duration))
 }
 
-function watch(bundle, task) {
+const watch = (bundle, task) => {
   const watcher = watchify(bundle)
   const rebundle = () => {
     const start = process.hrtime()

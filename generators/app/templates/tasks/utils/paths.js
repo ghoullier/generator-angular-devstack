@@ -1,5 +1,6 @@
 export default {
   sources: {
+    babel: './.babelrc',
     root: './src/',
     bower: './bower.json',
     config: './config/config-{{env}}.json',
