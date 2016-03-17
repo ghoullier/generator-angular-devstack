@@ -24,6 +24,7 @@ export default () => {
     server: {
       baseDir: root,
       middleware: pushStateMiddleware
-    }
+    },
+    ghostMode: false
   })
 }
