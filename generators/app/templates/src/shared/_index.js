@@ -1,22 +1,15 @@
 import { version as AppVersion } from '../../package'
 
-import EventsEmitter from './services/events-emitter'
-import Faker from './services/faker'
-import Logger from './services/logger'
+import { AsyncFaker } from './services/async-faker'
 
 import compiler from './config/compiler'
-import logger from './config/logger'
 
 export default angular
   .module('<%= appname %>.shared', [
     'ng'
   ])
   .constant('AppVersion', AppVersion)
-  .constant('EventsEmitter', EventsEmitter)
 
-  .service('Faker', Faker)
-
-  .provider('Logger', Logger)
+  .service('AsyncFaker', AsyncFaker)
 
   .config(compiler)
-  .config(logger)

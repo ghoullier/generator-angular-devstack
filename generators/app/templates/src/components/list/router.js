@@ -5,9 +5,18 @@ export default ($stateProvider, AuthenticatedNavProvider) => {
   $stateProvider
     .state('authenticated.list', {
       url: '/list',
+      resolve: {
+        items(AsyncFaker) {
+          'ngInject'
+          return AsyncFaker.getItems()
+        }
+      },
       views: {
         view: {
-          template: '<view-list></view-list>'
+          component: 'viewList',
+          bindings: {
+            items: 'items'
+          }
         }
       }
     })

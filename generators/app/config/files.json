@@ -36,10 +36,7 @@
     "src/components/login/styles/_login.scss",
 
     "src/shared/config/compiler.js",
-    "src/shared/config/logger.js",
-    "src/shared/services/events-emitter.js",
-    "src/shared/services/faker.js",
-    "src/shared/services/logger.js",
+    "src/shared/services/async-faker.js",
     "src/shared/styles/main.scss",
     "src/shared/styles/partials/_all.scss",
     "src/shared/styles/partials/_colors.scss",

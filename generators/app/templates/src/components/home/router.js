@@ -7,7 +7,7 @@ export default ($stateProvider, AuthenticatedNavProvider) => {
       url: '/home',
       views: {
         view: {
-          template: '<view-home></view-home>'
+          component: 'viewHome'
         }
       }
     })

@@ -7,7 +7,7 @@ export default ($stateProvider) => {
       url: '/login',
       views: {
         view: {
-          template: '<view-login></view-login>'
+          component: 'viewLogin'
         }
       }
     })
